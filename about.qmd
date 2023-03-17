@@ -11,7 +11,7 @@ about:
       href: https://uk.linkedin.com/in/deyu-ming-03607230
 ---
 
-I am currently a Lecturer in Matehmatics and Data Analytics at the School of Management of University College London.
+I am currently a Lecturer in Mathematics and Data Analytics at the School of Management of University College London.
 
 ## Education
 
