@@ -1,0 +1,24 @@
+---
+title: "About Me"
+about:
+  template: solana
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/mingdeyu
+    - icon: linkedin
+      text: Linkedin
+      href: https://uk.linkedin.com/in/deyu-ming-03607230
+---
+
+I am currently a Lecturer in Matehmatics and Data Analytics at the School of Management of University College London.
+
+## Education
+
+**University College London** | London, UK    
+PhD in Statistical Science | 2020
+
+**ETH Zurich** | Zurich, Switzerland      
+MSc in Quantitative Finance | 2016
+
+

@@ -1,0 +1,8 @@
+---
+page-layout: custom
+comments: false
+---
+
+:::{.column-page}
+![](dgp.gif)
+:::

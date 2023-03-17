@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+    
+execute:
+  freeze: true
+
+website:
+  title: "Deyu Ming"
+  description: The personal website of Deyu Ming
+  twitter-card: true
+  open-graph: true
+  navbar:
+    search: true
+    left:
+      - file: index.qmd
+        text: Home
+      - file: about.qmd
+        text: About
+      - file: "./research.qmd"
+        text: Research
+      - file: "./software.qmd"
+        text: Software
+    right:
+      - icon: github
+        href: https://github.com/mingdeyu
+  page-footer:
+    center: |
+      © 2023 [Deyu Ming](/about)                   
+      License: [CC BY NC SA 4.0](https://cxreativecommons.org/licenses/by-nc-sa/4.0)
+    right: |
+      Animation: [Deep Gaussian Processes](https://www.tandfonline.com/doi/full/10.1080/00401706.2022.2124311)   
+      Created with [dgpsi](https://github.com/mingdeyu/DGP)
+    left: |
+      Powered by [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme: simplex
+    css: styles.css
+    toc: true
+
+editor: visual
+

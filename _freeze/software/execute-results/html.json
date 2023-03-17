@@ -1,0 +1,14 @@
+{
+  "hash": "6e76c173c2dc19b947d7633813f9a68b",
+  "result": {
+    "markdown": "---\ntitle: \"Software\"\necho: false\n---\n\n\n<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.12.1/css/all.css\" crossorigin=\"anonymous\"> <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\">\n\n\n::: {.cell}\n<style type=\"text/css\">\n.button {background-color: white;\n  color: black;\n  border: 1px solid black;}\n  \n.button:hover {\n  background-color: black;\n  color: white;\n  border: 1px solid black;\n}\n</style>\n:::\n\n::: {.cell}\n\n:::\n\n\n## `dgpsi`\n\n`dgpsi` provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\n\nfollowing features:\n\n* Gaussian process emulations with separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels.\n* Deep Gaussian process emulations with flexible structures including: \n    - multiple layers;\n    - multiple GP nodes;\n    - separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels;\n    - global input connections;\n    - non-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).\n* Linked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\n* Fast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\n* Multi-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\n* Sequential designs for (D)GP emulators and bundles of (D)GP emulators.\n\n`<a href=\"https://mingdeyu.github.io/dgpsi-R/\">  <button class=\"btn btn-default btn-sm button\"><i class=\"fa fa-globe\"></i> Website</button></a>`{=html} `<a href=\"https://github.com/mingdeyu/dgpsi-R\">  <button class=\"btn btn-default btn-sm button\"><i class=\"fab fa-github\"></i> Github</button></a>`{=html} `<a href=\"https://cloud.r-project.org/web/packages/dgpsi/index.html\">  <button class=\"btn btn-default btn-sm button\"><i class=\"fab fa-r-project\"></i> CRAN</button></a>`{=html} `<a href=\"https://anaconda.org/conda-forge/dgpsi\">  <button class=\"btn btn-default btn-sm button\"><i class=\"fab fa-python\"></i> Conda</button></a>`{=html}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,55 @@
+---
+title: "Software"
+echo: false
+---
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+```{css}
+.button {background-color: white;
+  color: black;
+  border: 1px solid black;}
+  
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+```
+
+```{r}
+bt <- function(link, label, icon){
+  bt_ccs <- downloadthis::download_link(
+  link = link,
+  button_label = label,
+  button_type = "default",
+  has_icon = TRUE,
+  icon = icon,
+  self_contained = FALSE,
+  button_size = "small",
+  class = "button"
+  ) 
+  shiny::HTML(gsub("\n", "", as.character(bt_ccs)))
+}
+```
+
+## `dgpsi`
+
+`dgpsi` provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:
+
+following features:
+
+* Gaussian process emulations with separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels.
+* Deep Gaussian process emulations with flexible structures including: 
+    - multiple layers;
+    - multiple GP nodes;
+    - separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels;
+    - global input connections;
+    - non-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).
+* Linked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.
+* Fast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.
+* Multi-core predictions and validations for GP, DGP, and Linked (D)GP emulators.
+* Sequential designs for (D)GP emulators and bundles of (D)GP emulators.
+
+`r bt("https://mingdeyu.github.io/dgpsi-R/", "Website", "fa fa-globe")` `r bt("https://github.com/mingdeyu/dgpsi-R", "Github", "fab fa-github")` `r bt("https://cloud.r-project.org/web/packages/dgpsi/index.html", "CRAN", "fab fa-r-project")` `r bt("https://anaconda.org/conda-forge/dgpsi", "Conda", "fab fa-python")`
+
