@@ -5,5 +5,26 @@
     "title": "Research",
     "section": "Publication",
     "text": "Publication\nMing, D., Williamson, D., and Guillas, S. (2022) Deep Gaussian process emulation using stochastic imputation. Technometrics. 0(0), 1-12.\n   Preprint    DOI\nMing, D. and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design, SIAM/ASA Journal on Uncertainty Quantification. 9(4), 1615-1642.\n   Preprint    DOI"
+  },
+  {
+    "objectID": "software.html#dgpsi",
+    "href": "software.html#dgpsi",
+    "title": "Software",
+    "section": "dgpsi",
+    "text": "dgpsi\ndgpsi provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\nfollowing features:\n\nGaussian process emulations with separable or non-separable squared exponential and Matérn-2.5 kernels.\nDeep Gaussian process emulations with flexible structures including:\n\nmultiple layers;\nmultiple GP nodes;\nseparable or non-separable squared exponential and Matérn-2.5 kernels;\nglobal input connections;\nnon-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).\n\nLinked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\nFast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\nMulti-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\nSequential designs for (D)GP emulators and bundles of (D)GP emulators.\n\n   Website    Github    CRAN    Conda"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I am currently a Lecturer in Matehmatics and Data Analytics at the School of Management of University College London."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nUniversity College London | London, UK\nPhD in Statistical Science | 2020\nETH Zurich | Zurich, Switzerland\nMSc in Quantitative Finance | 2016"
   }
 ]
