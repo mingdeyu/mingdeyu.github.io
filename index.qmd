@@ -4,5 +4,5 @@ comments: false
 ---
 
 :::{.column-page}
-![](dgp.gif)
+![](dgp_new.gif)
 :::
