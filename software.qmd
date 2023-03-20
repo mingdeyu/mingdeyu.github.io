@@ -37,8 +37,6 @@ bt <- function(link, label, icon){
 
 `dgpsi` provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:
 
-following features:
-
 * Gaussian process emulations with separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels.
 * Deep Gaussian process emulations with flexible structures including: 
     - multiple layers;
