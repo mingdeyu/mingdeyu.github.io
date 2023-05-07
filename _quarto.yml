@@ -21,6 +21,8 @@ website:
         text: About
       - file: "./research.qmd"
         text: Research
+      - file: "./talks.qmd"
+        text: Talks
       - file: "./software.qmd"
         text: Software
     right:
