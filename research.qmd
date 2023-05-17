@@ -46,11 +46,12 @@ bt <- function(link, label, icon){
 
 ## Research Grants
 
-**User-Bespoke AI-Enhanced Decision Support to Deliver UK Woodland Expansion for Net Zero** (£2M), _EPSRC_, 2023-2025
+**User-Bespoke AI-Enhanced Decision Support to Deliver UK Woodland Expansion for Net Zero** (£2M), _EPSRC_, Co-I on AI development, 2023-2025
 
- - Co-Investigator on AI development
+`r bt("https://netzeroplus.ac.uk/ai-for-net-zero-project/", "Website", "fa fa-globe")`
  
-**NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), _BBSRC_, 2022-2023
+**NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), _BBSRC_, Co-I on emulator development, 2022-2023
 
-- Co-Investigator on emulator development
+`r bt("https://netzeroplus.ac.uk", "Website", "fa fa-globe")`
+
 
