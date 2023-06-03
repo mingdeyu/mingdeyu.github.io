@@ -24,12 +24,12 @@ body, html {
   object-fit: cover;
   object-position: center;
   width: auto; /* Maintains aspect ratio */
-  height: auto; /* The image will always be as tall as the body container */
+  height: 50%; /* The image will always be as tall as the body container */
 }
 
 </style>
 ```
 
 <div class="container">
-  ![](transparent.gif)
+  ![](transparent1.gif)
 </div>
