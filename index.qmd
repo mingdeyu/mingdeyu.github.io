@@ -17,7 +17,7 @@ body, html {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
   overflow:hidden;
 }
 
@@ -32,5 +32,5 @@ body, html {
 ```
 
 <div class="container">
-  ![](dgp_big.gif)
+  ![](dgp_path.gif)
 </div>
