@@ -3,6 +3,33 @@ page-layout: custom
 comments: false
 ---
 
-:::{.column-page}
-![](dgp_new.gif)
-:::
+```{=html}
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.container img {
+  object-fit: cover;
+  object-position: center;
+  width: auto; /* Maintains aspect ratio */
+  height: auto; /* The image will always be as tall as the body container */
+}
+
+</style>
+```
+
+<div class="container">
+  ![](transparent.gif)
+</div>
