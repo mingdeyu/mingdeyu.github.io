@@ -32,5 +32,5 @@ body, html {
 ```
 
 <div class="container">
-  ![](dgp_path.gif)
+  ![](dgp_big.gif)
 </div>
