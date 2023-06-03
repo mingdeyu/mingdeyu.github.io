@@ -18,18 +18,19 @@ body, html {
   justify-content: center;
   width: 100vw;
   height: 80vh;
+  overflow:hidden;
 }
 
 .container img {
   object-fit: cover;
   object-position: center;
   width: auto; /* Maintains aspect ratio */
-  height: 50%; /* The image will always be as tall as the body container */
+  height: auto; /* The image will always be as tall as the body container */
 }
 
 </style>
 ```
 
 <div class="container">
-  ![](transparent1.gif)
+  ![](dgp_path.gif)
 </div>
