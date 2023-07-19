@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Research & Teaching"
 echo: false
 ---
 
@@ -52,7 +52,7 @@ bt <- function(link, label, icon){
 
 **User-Bespoke AI-Enhanced Decision Support to Deliver UK Woodland Expansion for Net Zero** (£2M), _EPSRC_, Co-I on AI development, 2023-2025
 
-`r bt("https://netzeroplus.ac.uk/ai-for-net-zero-project/", "Website", "fa fa-globe")`
+`r bt("https://netzeroplus.ac.uk/add-trees-project/", "Website", "fa fa-globe")`
  
 **NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), _BBSRC_, Co-I on emulator development, 2022-2023
 
@@ -63,6 +63,16 @@ bt <- function(link, label, icon){
 **Ming, D.** (2020) Notes on Seismic Source Models in Elastostatic. EarthArXiv.
 
 `r bt("https://doi.org/10.31223/osf.io/234kp", "Preprint", "far fa-file-pdf")`
+
+## Teaching
+
+**University College London**
+
+- Data Analytics II (BSc Management Science)
+
+**ESCP Business School**
+
+- Statistics I: Statistics and Probability
 
 
 

@@ -20,7 +20,7 @@ website:
       - file: about.qmd
         text: About
       - file: "./research.qmd"
-        text: Research
+        text: Research & Teaching
       - file: "./talks.qmd"
         text: Talks
       - file: "./software.qmd"
