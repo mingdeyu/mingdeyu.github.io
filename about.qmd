@@ -26,5 +26,5 @@ I am currently looking for a Research Fellow in Artificial Intelligence based at
 
 The post holder will work with economists, mathematicians, statisticians, and research software engineers (RSEs) to develop innovative AI techniques on bespoke and adaptive methods for automatic emulation of a network of multidisciplinary models, enabling real-time decision support for UK’s woodland expansion, a critical step in achieving UK’s commitment to Net Zero by 2050.
 
-Learn more about the project and how to apply [here](https://www.mgmt.ucl.ac.uk/news/£2m-ukri-funding-project-collaboration-between-ucl-som-and-exeter-university). _Applications close on 06 August 2023_.
+_Learn more about the project and how to apply [here](https://www.mgmt.ucl.ac.uk/news/£2m-ukri-funding-project-collaboration-between-ucl-som-and-exeter-university). Applications close on 06 August 2023_.
 
