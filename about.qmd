@@ -18,13 +18,4 @@ I am a Lecturer in Mathematics and Data Analytics in the School of Management (S
 
 Prior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL.
 
----
-
-## Job Opportunity
-
-I am currently looking for a Research Fellow in Artificial Intelligence based at UCL SoM and Department of Mathematics. The post is funded by the EPSRC project ADD-TREES (AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services) and is available immediately until 31 March 2025. 
-
-The post holder will work with economists, mathematicians, statisticians, and research software engineers (RSEs) to develop innovative AI techniques on bespoke and adaptive methods for automatic emulation of a network of multidisciplinary models, enabling real-time decision support for UK’s woodland expansion, a critical step in achieving UK’s commitment to Net Zero by 2050.
-
-_Learn more about the project and how to apply [here](https://www.mgmt.ucl.ac.uk/news/£2m-ukri-funding-project-collaboration-between-ucl-som-and-exeter-university). Applications close on 06 August 2023_.
 
