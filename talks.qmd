@@ -35,7 +35,7 @@ bt <- function(link, label, icon){
 
 ## 2023
 
-- Oct 2023, **65th Annual Fall Technical Conference** (forthcoming, invited)
+- Oct 2023, **65th Annual Fall Technical Conference** (invited)
 - Sep 2023, **RSS International Conference** (invited)
 
 ## 2022
