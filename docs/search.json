@@ -53,14 +53,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I am a Lecturer in Mathematics and Data Analytics in the School of Management (SoM) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.\nPrior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL."
-  },
-  {
-    "objectID": "about.html#job-opportunity",
-    "href": "about.html#job-opportunity",
-    "title": "About Me",
-    "section": "Job Opportunity",
-    "text": "Job Opportunity\nI am currently looking for a Research Fellow in Statistical Science based at UCL SoM and Department of Mathematics. The post is funded by the EPSRC project ADD-TREES (AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services) and is available immediately until 31 March 2025.\nThe post holder will work with economists, mathematicians, statisticians, and research software engineers (RSEs) to develop innovative AI techniques on bespoke and adaptive methods for automatic deep Gaussian process emulation of a network of multidisciplinary models, enabling real-time decision support for UK’s woodland expansion, a critical step in achieving UK’s commitment to Net Zero by 2050.\nLearn more about the project and how to apply here. Applications close on 5 November 2023."
+    "text": "Prior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL."
   },
   {
     "objectID": "software.html#dgpsi",
