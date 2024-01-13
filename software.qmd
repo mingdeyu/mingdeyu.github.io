@@ -48,6 +48,7 @@ bt <- function(link, label, icon){
 * Fast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.
 * Multi-core predictions and validations for GP, DGP, and Linked (D)GP emulators.
 * Sequential designs for (D)GP emulators and bundles of (D)GP emulators.
+* Automatic pruning of DGP emulators, both statically and dynamically.
 
 `r bt("https://mingdeyu.github.io/dgpsi-R/", "Website", "fa fa-globe")` `r bt("https://github.com/mingdeyu/dgpsi-R", "Github", "fab fa-github")` `r bt("https://cloud.r-project.org/web/packages/dgpsi/index.html", "CRAN", "fab fa-r-project")` `r bt("https://anaconda.org/conda-forge/dgpsi", "Conda", "fab fa-python")`
 

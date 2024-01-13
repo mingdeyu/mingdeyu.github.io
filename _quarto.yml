@@ -31,7 +31,7 @@ website:
   page-footer:
     center: |
       © 2024 [Deyu Ming](/about)                   
-      Animation: Deep Gaussian Processes [(dgpsi)](https://github.com/mingdeyu/DGP)
+      Animation: Deep Gaussian Processes [(dgpsi)](https://mingdeyu.github.io/dgpsi-R/)
 
 format:
   html:
