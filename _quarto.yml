@@ -30,8 +30,8 @@ website:
         href: https://github.com/mingdeyu/mingdeyu.github.io/
   page-footer:
     center: |
-      © 2023 [Deyu Ming](/about)                   
-      License: [CC BY NC SA 4.0](https://cxreativecommons.org/licenses/by-nc-sa/4.0)
+      © 2024 [Deyu Ming](/about)                   
+      Animation: Deep Gaussian Processes [(dgpsi)](https://github.com/mingdeyu/DGP)
 
 format:
   html:

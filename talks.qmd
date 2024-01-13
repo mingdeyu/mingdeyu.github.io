@@ -33,13 +33,14 @@ bt <- function(link, label, icon){
 }
 ```
 
-## 2023
+## 2024
+- Feb 2024, **SIAM Conference on Uncertainty Quantification (UQ24)** (forthcoming)
+- Feb 2024, **UCL Physical Geography Seminar** (forthcoming)
+
+## 2022 - 2023
 
 - Oct 2023, **65th Annual Fall Technical Conference** (invited)
 - Sep 2023, **RSS International Conference** (invited)
-
-## 2022
-
 - Apr 2022, **SIAM Conference on Uncertainty Quantification** (invited)
 - Feb 2022, **UCL-MOAP Workshop on Bayesian Machine Learning for Weather and Climate** (invited)
 
