@@ -34,8 +34,8 @@ bt <- function(link, label, icon){
 ```
 
 ## 2024
-- Feb 2024, **SIAM Conference on Uncertainty Quantification (UQ24)** (forthcoming)
-- Feb 2024, **UCL Physical Geography Seminar** (forthcoming)
+- Feb 2024, **SIAM Conference on Uncertainty Quantification (UQ24)** (invited)
+- Feb 2024, **UCL Physical Geography Seminar** (invited)
 
 ## 2022 - 2023
 
