@@ -14,7 +14,7 @@ about:
       href: deyu.ming.16@ucl.ac.uk
 ---
 
-I am a Lecturer in Mathematics and Data Analytics in the School of Management (SoM) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.
+I am a Lecturer in Mathematics and Data Analytics in the [School of Management (SoM)](https://www.mgmt.ucl.ac.uk) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.
 
 Prior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL.
 
