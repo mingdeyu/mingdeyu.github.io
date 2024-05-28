@@ -34,6 +34,7 @@ bt <- function(link, label, icon){
 ```
 
 ## 2024
+- July 2024 **BNP Networking Workshop** (Forthcoming)
 - Feb 2024, **SIAM Conference on Uncertainty Quantification (UQ24)** (invited)
 - Feb 2024, **UCL Physical Geography Seminar** (invited)
 

@@ -52,7 +52,7 @@ bt <- function(link, label, icon){
 
 **ADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services** (£2M), _EPSRC_, Co-I on AI development, 2023-2025
 
-`r bt("https://netzeroplus.ac.uk/project/add-trees/", "Website", "fa fa-globe")`
+`r bt("https://netzeroplus.ac.uk/project/add-trees/", "Website", "fa fa-globe")` `r bt("https://youtu.be/0PosmroCy4A?si=tvwEKqBfZ_uvdsuy", "Video", "fa fa-video")`
  
 **NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), _BBSRC_, Co-I on emulator development, 2022-2023
 
@@ -69,6 +69,7 @@ bt <- function(link, label, icon){
 **University College London**
 
 - Data Analytics II (BSc Management Science)
+- Mathematics III (Probability Theory)
 
 **ESCP Business School**
 
