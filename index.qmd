@@ -3,7 +3,6 @@ page-layout: custom
 comments: false
 ---
 
-```{=html}
 <style>
 body, html {
   height: 100%;
@@ -16,21 +15,19 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 75vh;
-  overflow:hidden;
+  width: 100%; /* 100% of the browser width */
+  height: 75vh; /* 75% of the viewport height */
+  overflow: hidden;
 }
 
 .container img {
-  object-fit: cover;
-  object-position: center;
-  width: auto; /* Maintains aspect ratio */
-  height: auto; /* The image will always be as tall as the body container */
+  max-width: 100%;  /* Scale the image down to fit the container width */
+  max-height: 100%; /* Scale the image down to fit the container height */
+  width: auto;
+  height: auto;
 }
-
 </style>
-```
 
 <div class="container">
-  ![](dgp_path.gif)
+  <img src="dgp_path.gif">
 </div>
