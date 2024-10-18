@@ -50,6 +50,8 @@ bt <- function(link, label, icon){
 
 ## Research Grants
 
+**Development and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support** (£160,000), _BBSRC_, Co-I on Model Calibration, 2024-2025
+
 **ADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services** (£2M), _EPSRC_, Co-I on AI development, 2023-2025
 
 `r bt("https://netzeroplus.ac.uk/project/add-trees/", "Website", "fa fa-globe")` `r bt("https://youtu.be/0PosmroCy4A?si=tvwEKqBfZ_uvdsuy", "Video", "fa fa-video")`

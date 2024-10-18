@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "software.html#dgpsi",
+    "href": "software.html#dgpsi",
+    "title": "Software",
+    "section": "dgpsi",
+    "text": "dgpsi\ndgpsi provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\n\nGaussian process emulations with separable or non-separable squared exponential and Matérn-2.5 kernels.\nDeep Gaussian process emulations with flexible structures including:\n\nmultiple layers;\nmultiple GP nodes;\nseparable or non-separable squared exponential and Matérn-2.5 kernels;\nglobal input connections;\nnon-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).\n\nLinked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\nFast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\nMulti-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\nSequential designs for (D)GP emulators and bundles of (D)GP emulators.\nAutomatic pruning of DGP emulators, both statically and dynamically.\n\n   Website    Github    CRAN    Conda"
+  },
+  {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "Research & Teaching",
@@ -53,13 +60,6 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Prior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL."
-  },
-  {
-    "objectID": "software.html#dgpsi",
-    "href": "software.html#dgpsi",
-    "title": "Software",
-    "section": "dgpsi",
-    "text": "dgpsi\ndgpsi provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\n\nGaussian process emulations with separable or non-separable squared exponential and Matérn-2.5 kernels.\nDeep Gaussian process emulations with flexible structures including:\n\nmultiple layers;\nmultiple GP nodes;\nseparable or non-separable squared exponential and Matérn-2.5 kernels;\nglobal input connections;\nnon-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).\n\nLinked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\nFast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\nMulti-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\nSequential designs for (D)GP emulators and bundles of (D)GP emulators.\nAutomatic pruning of DGP emulators, both statically and dynamically.\n\n   Website    Github    CRAN    Conda"
+    "text": "I am a Lecturer in Mathematics and Data Analytics in the School of Management (SoM) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.\nPrior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL."
   }
 ]
