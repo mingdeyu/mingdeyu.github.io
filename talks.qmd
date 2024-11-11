@@ -35,7 +35,8 @@ bt <- function(link, label, icon){
 
 ## 2024
 - Dec 2024, **Conference on Computational and Methodological Statistics** (invited)
-- Jul 2024, **BNP Networking Workshop** (Contributing)
+- Dec 2024, **AI for NetZero Conference** (contributing)
+- Jul 2024, **BNP Networking Workshop** (contributing)
 - Feb 2024, **SIAM Conference on Uncertainty Quantification (UQ24)** (invited)
 - Feb 2024, **UCL Physical Geography Seminar** (invited)
 
