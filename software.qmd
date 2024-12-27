@@ -43,12 +43,15 @@ bt <- function(link, label, icon){
     - multiple GP nodes;
     - separable or non-separable squared exponential and Mat&eacute;rn-2.5 kernels;
     - global input connections;
-    - non-Gaussian likelihoods (Poisson, Negative-Binomial, and heteroskedastic Gaussian).
+    - non-Gaussian likelihoods (Poisson, Negative-Binomial, heteroskedastic Gaussian, and Categorical).
 * Linked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.
 * Fast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.
 * Multi-core predictions and validations for GP, DGP, and Linked (D)GP emulators.
 * Sequential designs for (D)GP emulators and bundles of (D)GP emulators.
 * Automatic pruning of DGP emulators, both statically and dynamically.
+* Large-scale GP, DGP, and Linked (D)GP emulations.
+* Scalable DGP classification using Stochastic Imputation.
+* Bayesian optimization.
 
 `r bt("https://mingdeyu.github.io/dgpsi-R/", "Website", "fa fa-globe")` `r bt("https://github.com/mingdeyu/dgpsi-R", "Github", "fab fa-github")` `r bt("https://cloud.r-project.org/web/packages/dgpsi/index.html", "CRAN", "fab fa-r-project")` `r bt("https://anaconda.org/conda-forge/dgpsi", "Conda", "fab fa-python")`
 
