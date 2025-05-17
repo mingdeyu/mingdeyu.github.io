@@ -11,14 +11,14 @@
     "href": "research.html#publications",
     "title": "Research & Teaching",
     "section": "Publications",
-    "text": "Publications\nMing, D. and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212. Under Review.\n   Preprint\nMing, D., Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. Technometrics. 65(2), 150-161.\n   Preprint    DOI\nMing, D. and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. SIAM/ASA Journal on Uncertainty Quantification. 9(4), 1615-1642.\n   Preprint    DOI"
+    "text": "Publications\nYang, Y., Ming, D., and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. Under Review.\n   Preprint\nMing, D. and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212. Under Review.\n   Preprint\nMing, D., Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. Technometrics. 65(2), 150-161.\n   Preprint    DOI\nMing, D. and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. SIAM/ASA Journal on Uncertainty Quantification. 9(4), 1615-1642.\n   Preprint    DOI"
   },
   {
     "objectID": "research.html#research-grants",
     "href": "research.html#research-grants",
     "title": "Research & Teaching",
     "section": "Research Grants",
-    "text": "Research Grants\nDevelopment and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support (£160,000), BBSRC, Co-I on Model Calibration, 2024-2025\nADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services (£2M), EPSRC, Co-I on AI development, 2023-2025\n   Website    Video\nNetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools (£4M), BBSRC, Co-I on emulator development, 2022-2023\n   Website"
+    "text": "Research Grants\nKnowledge Transfer Partnership (£199,000), Innovate UK & Howden Re, Co-PI (Academic Supervisor), 2025-2027\nDevelopment and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support (£160,000), BBSRC, Co-I on Model Calibration, 2024-2025\nADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services (£2M), EPSRC, Co-I on AI development, 2023-2025\n   Website    Video\nNetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools (£4M), BBSRC, Co-I on emulator development, 2022-2023\n   Website"
   },
   {
     "objectID": "research.html#non-peer-reviewed-manuscripts",
@@ -38,19 +38,26 @@
     "objectID": "talks.html#section",
     "href": "talks.html#section",
     "title": "Talks",
-    "section": "2024",
-    "text": "2024\n\nDec 2024, Conference on Computational and Methodological Statistics (invited)\nDec 2024, AI for NetZero Conference (contributing)\nJul 2024, BNP Networking Workshop (contributing)\nFeb 2024, SIAM Conference on Uncertainty Quantification (UQ24) (invited)\nFeb 2024, UCL Physical Geography Seminar (invited)"
+    "section": "2025",
+    "text": "2025\n\nAug 2025, 8th International Conference on Econometrics and Statistics (upcoming)"
   },
   {
     "objectID": "talks.html#section-1",
     "href": "talks.html#section-1",
     "title": "Talks",
-    "section": "2022 - 2023",
-    "text": "2022 - 2023\n\nOct 2023, 65th Annual Fall Technical Conference (invited)\nSep 2023, RSS International Conference (invited)\nApr 2022, SIAM Conference on Uncertainty Quantification (invited)\nFeb 2022, UCL-MOAP Workshop on Bayesian Machine Learning for Weather and Climate (invited)"
+    "section": "2024",
+    "text": "2024\n\nDec 2024, Conference on Computational and Methodological Statistics (invited)\nDec 2024, AI for NetZero Conference (contributing)\nJul 2024, BNP Networking Workshop (contributing)\nFeb 2024, SIAM Conference on Uncertainty Quantification (UQ24) (invited)\nFeb 2024, UCL Physical Geography Seminar (invited)"
   },
   {
     "objectID": "talks.html#section-2",
     "href": "talks.html#section-2",
+    "title": "Talks",
+    "section": "2022 - 2023",
+    "text": "2022 - 2023\n\nOct 2023, 65th Annual Fall Technical Conference (invited)\nSep 2023, RSS International Conference (invited)\nApr 2022, SIAM Conference on Uncertainty Quantification (invited)\nFeb 2022, UCL-MOAP Workshop on Bayesian Machine Learning for Weather and Climate (invited)"
+  },
+  {
+    "objectID": "talks.html#section-3",
+    "href": "talks.html#section-3",
     "title": "Talks",
     "section": "2016 - 2021",
     "text": "2016 - 2021\n\nSep 2021, UQ Reading Group, University of Exeter (invited)\nSep 2020, GdR Mascot-Num meeting (contributing)\nJul 2020, Centre for Doctoral Training in Foundational AI, UCL (invited)\nMar 2020, SIAM Conference on Uncertainty Quantification (invited)\nJan 2020, Data-Centric Engineering Group, Alan Turing Institute (invited)\nAug 2019, Effective and Efficient Gaussian Processes, Alan Turing Institute (invited)\nJun 2018, 16th European Conference on Earthquake Engineering (contributing)\nMay 2018, 4th International Conference on Continental Earthquakes (contributing)\nNov 2017, NatCat and Earthquake Modelling Workshop, RiskLab, ETH Zurich (invited)\nDec 2016, Workshop on Earthquake Modelling, RiskLab, ETH Zurich (invited)"

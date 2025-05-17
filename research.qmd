@@ -36,6 +36,10 @@ bt <- function(link, label, icon){
 
 ## Publications
 
+Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. _Under Review_.
+
+`r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
+
 **Ming, D.** and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212. _Under Review_.
 
 `r bt("http://arxiv.org/abs/2306.01212", "Preprint", "far fa-file-pdf")`
@@ -49,6 +53,8 @@ bt <- function(link, label, icon){
 `r bt("https://doi.org/10.48550/arXiv.1912.09468", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1137/20M1323771", "DOI", "ai ai-open-access ai-lg")`
 
 ## Research Grants
+
+**Knowledge Transfer Partnership** (£199,000), _Innovate UK_ & _Howden Re_, Co-PI (Academic Supervisor), 2025-2027
 
 **Development and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support** (£160,000), _BBSRC_, Co-I on Model Calibration, 2024-2025
 
