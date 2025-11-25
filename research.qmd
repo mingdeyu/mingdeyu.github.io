@@ -43,6 +43,10 @@ Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian pro
 
 `r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
 
+Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, R. (2024). Linked Deep Gaussian Process for Digital Twins in Building Energy Systems. In _Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA_. Osaka, Japan. 
+
+`r bt("http://doi.org/10.69357/asim2024.1277", "DOI", "ai ai-open-access ai-lg")`
+
 **Ming, D.** and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212.
 
 `r bt("http://arxiv.org/abs/2306.01212", "Preprint", "far fa-file-pdf")`
