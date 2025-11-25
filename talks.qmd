@@ -32,10 +32,12 @@ bt <- function(link, label, icon){
   shiny::HTML(gsub("\n", "", as.character(bt_ccs)))
 }
 ```
-## 2025
-- Aug 2025, **8th International Conference on Econometrics and Statistics** (upcoming)
+## 2026
+- June 2026, **The 2026 ISBA World Meeting** (invited, upcoming)
+- Mar 2026, **SIAM Conference on Uncertainty Quantification** (organiser, upcoming)
 
-## 2024
+## 2024 - 2025
+- Aug 2025, **8th International Conference on Econometrics and Statistics** (contributing)
 - Dec 2024, **Conference on Computational and Methodological Statistics** (invited)
 - Dec 2024, **AI for NetZero Conference** (invited)
 - Jul 2024, **BNP Networking Workshop** (contributing)

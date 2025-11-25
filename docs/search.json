@@ -4,14 +4,14 @@
     "href": "software.html#dgpsi",
     "title": "Software",
     "section": "dgpsi",
-    "text": "dgpsi\ndgpsi provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\n\nGaussian process emulations with separable or non-separable squared exponential and Matérn-2.5 kernels.\nDeep Gaussian process emulations with flexible structures including:\n\nmultiple layers;\nmultiple GP nodes;\nseparable or non-separable squared exponential and Matérn-2.5 kernels;\nglobal input connections;\nnon-Gaussian likelihoods (Poisson, Negative-Binomial, heteroskedastic Gaussian, and Categorical).\n\nLinked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\nFast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\nMulti-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\nSequential designs for (D)GP emulators and bundles of (D)GP emulators.\nAutomatic pruning of DGP emulators, both statically and dynamically.\nLarge-scale GP, DGP, and Linked (D)GP emulations.\nScalable DGP classification using Stochastic Imputation.\nBayesian optimization.\n\n   Website    Github    CRAN    Conda"
+    "text": "dgpsi\ndgpsi provides both Python and R implementations for deep and linked Gaussian process emulations. It currently has following features:\n\nGaussian process emulations with separable or non-separable squared exponential and Matérn-2.5 kernels.\nDeep Gaussian process emulations with flexible structures including:\n\nmultiple layers;\nmultiple GP nodes;\nseparable or non-separable squared exponential and Matérn-2.5 kernels;\nglobal input connections;\nnon-Gaussian likelihoods (Poisson, Negative-Binomial, heteroskedastic Gaussian, and Categorical).\n\nLinked emulations of feed-forward systems of computer models by linking (D)GP emulators of deterministic individual computer models.\nFast Leave-One-Out (LOO) and Out-Of-Sample (OOS) validations for GP, DGP, and linked (D)GP emulators.\nMulti-core predictions and validations for GP, DGP, and Linked (D)GP emulators.\nSequential designs for (D)GP emulators and bundles of (D)GP emulators.\nAutomatic pruning of DGP emulators, both statically and dynamically.\nLarge-scale GP, DGP, and Linked (D)GP emulations.\nScalable DGP classification using Stochastic Imputation.\nBayesian optimization.\n\n   Website (R)    Github (R)    Github (Python)    CRAN    Conda"
   },
   {
     "objectID": "research.html#publications",
     "href": "research.html#publications",
     "title": "Research & Teaching",
     "section": "Publications",
-    "text": "Publications\nSeptiandri, A., Ming, D., DiazDelaO, A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. arXiv:2505.12076, Under Review.\n   Preprint\nYang, Y., Ming, D., and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. Under Review.\n   Preprint\nMing, D. and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212. Under Review.\n   Preprint\nMing, D., Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. Technometrics. 65(2), 150-161.\n   Preprint    DOI\nMing, D. and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. SIAM/ASA Journal on Uncertainty Quantification. 9(4), 1615-1642.\n   Preprint    DOI"
+    "text": "Publications\nSeptiandri, A., Ming, D., DiazDelaO, A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. Bioinformatics Advances, in press.\n   Preprint\nYang, Y., Ming, D., and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. Under Review.\n   Preprint\nMing, D. and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212.\n   Preprint\nMing, D., Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. Technometrics. 65(2), 150-161.\n   Preprint    DOI\nMing, D. and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. SIAM/ASA Journal on Uncertainty Quantification. 9(4), 1615-1642.\n   Preprint    DOI"
   },
   {
     "objectID": "research.html#research-grants",
@@ -32,21 +32,21 @@
     "href": "research.html#teaching",
     "title": "Research & Teaching",
     "section": "Teaching",
-    "text": "Teaching\nUniversity College London\n\nData Analytics II (BSc Management Science)\nMathematics III (Probability Theory)\n\nESCP Business School\n\nStatistics I: Statistics and Probability"
+    "text": "Teaching\nUniversity College London\n\nInternational Business Analytics (BSc International Management)\nData Analytics II (BSc Management Science)\nMathematics III (Probability Theory)\n\nESCP Business School\n\nStatistics I: Statistics and Probability"
   },
   {
     "objectID": "talks.html#section",
     "href": "talks.html#section",
     "title": "Talks",
-    "section": "2025",
-    "text": "2025\n\nAug 2025, 8th International Conference on Econometrics and Statistics (upcoming)"
+    "section": "2026",
+    "text": "2026\n\nJune 2026, The 2026 ISBA World Meeting (invited, upcoming)\nMar 2026, SIAM Conference on Uncertainty Quantification (organiser, upcoming)"
   },
   {
     "objectID": "talks.html#section-1",
     "href": "talks.html#section-1",
     "title": "Talks",
-    "section": "2024",
-    "text": "2024\n\nDec 2024, Conference on Computational and Methodological Statistics (invited)\nDec 2024, AI for NetZero Conference (invited)\nJul 2024, BNP Networking Workshop (contributing)\nFeb 2024, SIAM Conference on Uncertainty Quantification (UQ24) (invited)\nFeb 2024, UCL Physical Geography Seminar (invited)"
+    "section": "2024 - 2025",
+    "text": "2024 - 2025\n\nAug 2025, 8th International Conference on Econometrics and Statistics (contributing)\nDec 2024, Conference on Computational and Methodological Statistics (invited)\nDec 2024, AI for NetZero Conference (invited)\nJul 2024, BNP Networking Workshop (contributing)\nFeb 2024, SIAM Conference on Uncertainty Quantification (UQ24) (invited)\nFeb 2024, UCL Physical Geography Seminar (invited)"
   },
   {
     "objectID": "talks.html#section-2",
@@ -67,6 +67,6 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I am a Lecturer in Mathematics and Data Analytics in the School of Management (SoM) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.\nPrior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL."
+    "text": "I am a Lecturer in Mathematics and Data Analytics in the School of Management (SoM) at University College London (UCL). My research focuses on methodological and computational developments of statistical and machine learning tools to quantify uncertainties of multi-physics and multi-disciplinary decision systems. My research interests lie in the integration and Uncertainty Quantification (UQ) of cross-disciplinary models, supporting fast decision-making to tackle the ever-growing challenges in physics, environmental science, and natural hazards.\nPrior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL.\nI am the developer and maintainer of dgpsi, an open-source software package that provides a unified, production-ready implementation of linked and deep Gaussian process emulation and was recognised with the 2025 UCL Open Science and Scholarship Award."
   }
 ]

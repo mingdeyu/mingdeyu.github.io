@@ -53,9 +53,10 @@ bt <- function(link, label, icon){
 * Scalable DGP classification using Stochastic Imputation.
 * Bayesian optimization.
 
-`r bt("https://mingdeyu.github.io/dgpsi-R/", "Website", "fa fa-globe")` `r bt("https://github.com/mingdeyu/dgpsi-R", "Github", "fab fa-github")` `r bt("https://cloud.r-project.org/web/packages/dgpsi/index.html", "CRAN", "fab fa-r-project")` `r bt("https://anaconda.org/conda-forge/dgpsi", "Conda", "fab fa-python")`
+`r bt("https://mingdeyu.github.io/dgpsi-R/", "Website (R)", "fa fa-globe")` `r bt("https://github.com/mingdeyu/dgpsi-R", "Github (R)", "fab fa-github")` `r bt("https://github.com/mingdeyu/DGP", "Github (Python)", "fab fa-github")` `r bt("https://cloud.r-project.org/web/packages/dgpsi/index.html", "CRAN", "fab fa-r-project")` `r bt("https://anaconda.org/conda-forge/dgpsi", "Conda", "fab fa-python")`
 
+<!--
 ```{r embed-xaringan, echo=FALSE}
 xaringanExtra::embed_xaringan(url = "tutorial.html", ratio = "4:3")
 ```
-
+-->

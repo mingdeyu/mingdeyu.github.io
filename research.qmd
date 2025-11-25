@@ -35,7 +35,7 @@ bt <- function(link, label, icon){
 ```
 
 ## Publications
-Septiandri, A., **Ming, D.**, DiazDelaO, A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. arXiv:2505.12076, _Under Review_.
+Septiandri, A., **Ming, D.**, DiazDelaO, A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. _Bioinformatics Advances_, _in press_.
 
 `r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")`
 
@@ -43,7 +43,7 @@ Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian pro
 
 `r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
 
-**Ming, D.** and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212. _Under Review_.
+**Ming, D.** and Williamson, D. (2023) Linked deep Gaussian process emulation for model networks. arXiv:2306.01212.
 
 `r bt("http://arxiv.org/abs/2306.01212", "Preprint", "far fa-file-pdf")`
 
@@ -79,6 +79,7 @@ Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian pro
 
 **University College London**
 
+- International Business Analytics (BSc International Management)
 - Data Analytics II (BSc Management Science)
 - Mathematics III (Probability Theory)
 
