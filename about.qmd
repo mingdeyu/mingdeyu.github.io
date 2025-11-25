@@ -18,5 +18,5 @@ I am a Lecturer in Mathematics and Data Analytics in the [School of Management (
 
 Prior to joining SoM, I did my postgraduate degrees at the Imperial College London and ETH Zurich respectively. I then finished my PhD and worked as a postdoctoral researcher in the Department of Statistical Science at UCL.
 
-I am the developer and maintainer of [dgpsi](https://mingdeyu.github.io/software.html), an open-source software package that provides a unified, production-ready implementation of linked and deep Gaussian process emulation and was recognised with the 2025 UCL Open Science and Scholarship Award.
+I am the developer and maintainer of [`dgpsi`](https://mingdeyu.github.io/software.html), an open-source software package that provides a unified, production-ready implementation of linked and deep Gaussian process emulation and was recognised with the [2025 UCL Open Science and Scholarship Award](https://blogs.ucl.ac.uk/open-access/2025/10/06/open-science-scholarship-award-winners-2025/).
 
