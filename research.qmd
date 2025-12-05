@@ -35,9 +35,9 @@ bt <- function(link, label, icon){
 ```
 
 ## Publications
-Septiandri, A., **Ming, D.**, DiazDelaO, A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. _Bioinformatics Advances_, _in press_.
+Septiandri, A., **Ming, D.**, DiazDelaO, F. A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. _Bioinformatics Advances_.
 
-`r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")`
+`r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1093/bioadv/vbaf305", "DOI", "ai ai-open-access ai-lg")` 
 
 Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. _Under Review_.
 
