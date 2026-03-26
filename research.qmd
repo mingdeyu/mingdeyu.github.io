@@ -3,8 +3,7 @@ title: "Research & Teaching"
 echo: false
 ---
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 ```{css}
 .button {background-color: white;
@@ -35,15 +34,20 @@ bt <- function(link, label, icon){
 ```
 
 ## Publications
-Septiandri, A., **Ming, D.**, DiazDelaO, F. A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. _Bioinformatics Advances_.
 
-`r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1093/bioadv/vbaf305", "DOI", "ai ai-open-access ai-lg")` 
+**Ming, D.** and Williamson, D. (2026) Generalized and scalable deep Gaussian process emulation. arXiv:2603.24538.
 
-Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. _Under Review_.
+`r bt("http://arxiv.org/abs/2603.24538", "Preprint", "far fa-file-pdf")`
+
+Septiandri, A., **Ming, D.**, DiazDelaO, F. A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. *Bioinformatics Advances*.
+
+`r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1093/bioadv/vbaf305", "DOI", "ai ai-open-access ai-lg")`
+
+Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. *Under Review*.
 
 `r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
 
-Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, R. (2024). Linked Deep Gaussian Process for Digital Twins in Building Energy Systems. In _Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA_. Osaka, Japan. 
+Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, R. (2024). Linked Deep Gaussian Process for Digital Twins in Building Energy Systems. In *Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA*. Osaka, Japan.
 
 `r bt("http://doi.org/10.69357/asim2024.1277", "DOI", "ai ai-open-access ai-lg")`
 
@@ -51,25 +55,25 @@ Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, 
 
 `r bt("http://arxiv.org/abs/2306.01212", "Preprint", "far fa-file-pdf")`
 
-**Ming, D.**, Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. _Technometrics_. 65(2), 150-161.
+**Ming, D.**, Williamson, D., and Guillas, S. (2023) Deep Gaussian process emulation using stochastic imputation. *Technometrics*. 65(2), 150-161.
 
-`r bt("https://arxiv.org/abs/2107.01590", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1080/00401706.2022.2124311", "DOI", "ai ai-open-access ai-lg")`  
+`r bt("https://arxiv.org/abs/2107.01590", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1080/00401706.2022.2124311", "DOI", "ai ai-open-access ai-lg")`
 
-**Ming, D.** and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. _SIAM/ASA Journal on Uncertainty Quantification_. 9(4), 1615-1642.
+**Ming, D.** and Guillas, S. (2021) Linked Gaussian process emulation for systems of computer models using Matérn kernels and adaptive design. *SIAM/ASA Journal on Uncertainty Quantification*. 9(4), 1615-1642.
 
 `r bt("https://doi.org/10.48550/arXiv.1912.09468", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1137/20M1323771", "DOI", "ai ai-open-access ai-lg")`
 
 ## Research Grants
 
-**Knowledge Transfer Partnership** (£220,000), _Innovate UK & Howden Re_, PI (Academic Supervisor), 2025-2027
+**Knowledge Transfer Partnership** (£220,000), *Innovate UK & Howden Re*, PI (Academic Supervisor), 2025-2027
 
-**Development and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support** (£160,000), _BBSRC_, Co-I on Model Calibration, 2024-2025
+**Development and Calibration of a Mixed-Species Model for Enhanced Woodland Creation Support** (£160,000), *BBSRC*, Co-I on Model Calibration, 2024-2025
 
-**ADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services** (£2M), _EPSRC_, Co-I on AI development, 2023-2025
+**ADD-TREES: AI-elevated Decision-support via Digital Twins for Restoring and Enhancing Ecosystem Services** (£2M), *EPSRC*, Co-I on AI development, 2023-2025
 
 `r bt("https://netzeroplus.ac.uk/project/add-trees/", "Website", "fa fa-globe")` `r bt("https://youtu.be/0PosmroCy4A?si=tvwEKqBfZ_uvdsuy", "Video", "fa fa-video")`
- 
-**NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), _BBSRC_, Co-I on emulator development, 2022-2023
+
+**NetZeroPlus: Sustainable Treescapes Demonstrator and Decision Tools** (£4M), *BBSRC*, Co-I on emulator development, 2022-2023
 
 `r bt("https://netzeroplus.ac.uk/project/net-zero-plus/", "Website", "fa fa-globe")`
 
@@ -83,13 +87,10 @@ Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, 
 
 **University College London**
 
-- International Business Analytics (BSc International Management)
-- Data Analytics II (BSc Management Science)
-- Mathematics III (Probability Theory)
+-   International Business Analytics (BSc International Management)
+-   Data Analytics II (BSc Management Science)
+-   Mathematics III (Probability Theory)
 
 **ESCP Business School**
 
-- Statistics I: Statistics and Probability
-
-
-
+-   Statistics I: Statistics and Probability
