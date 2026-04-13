@@ -35,7 +35,8 @@ bt <- function(link, label, icon){
 
 ## 2026
 
--   June 2026, **The 2026 ISBA World Meeting** (invited, upcoming)
+-   Jul 2026, **4th Bayesian Nonparametrics Networking Workshop** (invited, upcoming)
+-   Jun 2026, **The 2026 ISBA World Meeting** (invited, upcoming)
 -   Mar 2026, **SIAM Conference on Uncertainty Quantification** (invited)
 
 ## 2024 - 2025
