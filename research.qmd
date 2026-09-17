@@ -39,13 +39,13 @@ bt <- function(link, label, icon){
 
 `r bt("http://arxiv.org/abs/2603.24538", "Preprint", "far fa-file-pdf")`
 
+Yang, Y., **Ming, D.**, and Guillas, S. (2026) Deep Gaussian process emulation with gradient information and sequential design for simulators with sharp variations. arXiv:2503.16027. *SIAM/ASA Journal on Uncertainty Quantification*. In press.
+
+`r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
+
 Septiandri, A., **Ming, D.**, DiazDelaO, F. A., Jendoubi, T., and Ray S. (2025) Integrative analysis and imputation of multiple data streams via deep Gaussian processes. *Bioinformatics Advances*.
 
 `r bt("http://arxiv.org/abs/2505.12076", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1093/bioadv/vbaf305", "DOI", "ai ai-open-access ai-lg")`
-
-Yang, Y., **Ming, D.**, and Guillas, S. (2025) Distribution of deep Gaussian process gradients and sequential design for simulators with sharp variations. arXiv:2503.16027. *Under Review*.
-
-`r bt("http://arxiv.org/abs/2503.16027", "Preprint", "far fa-file-pdf")`
 
 Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, R. (2024). Linked Deep Gaussian Process for Digital Twins in Building Energy Systems. In *Proceedings of ASim Conference 2024: 5th Asia Conference of IBPSA*. Osaka, Japan.
 
@@ -64,6 +64,8 @@ Zhuang, C., **Ming, D.**, Yuan, M., Makasis, N., Kreitmair J., M., & Choudhary, 
 `r bt("https://doi.org/10.48550/arXiv.1912.09468", "Preprint", "far fa-file-pdf")` `r bt("https://doi.org/10.1137/20M1323771", "DOI", "ai ai-open-access ai-lg")`
 
 ## Research Grants
+
+**Predictive Modelling and Optimisation for Net-Zero Building-EV-Grid Integration** (£5,000), *UCL Global Engagement Funds*, PI, 2026-2027
 
 **Knowledge Transfer Partnership** (£220,000), *Innovate UK & Howden Re*, PI (Academic Supervisor), 2025-2027
 
