@@ -93,7 +93,7 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 @media(pointer:coarse) { #dm-software-designs .sc-field { min-height:44px; font-size:16px; } #dm-software-designs input.sc-field { width:82px; } }
 
 
-#dm-software-designs .de-demo { padding-top:4px; }
+#dm-software-designs .de-demo { padding-top:4px; max-width:790px; }
 #dm-software-designs .de-example-switch { display:flex; gap:5px; margin-bottom:20px; }
 #dm-software-designs .de-example-switch button { border:0; background:transparent; color:var(--ds-muted); padding:4px 10px; font:400 13px/1.65 'Open Sans',sans-serif; border-radius:4px; }
 #dm-software-designs .de-example-switch button[aria-pressed=true] { color:var(--ds-ink); background:#ecebea; }

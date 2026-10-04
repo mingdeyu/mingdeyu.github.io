@@ -7,6 +7,8 @@ assert destination!=source and source not in destination.parents, 'Use an output
 assert destination!=Path('/'), 'A dedicated output folder is required'
 shutil.copytree(source/'static',destination,dirs_exist_ok=True)
 template=(source/'template.html').read_text()
+style_version=hashlib.sha256((source/'static/assets/site.css').read_bytes()).hexdigest()[:12]
+template=template.replace('href="assets/site.css"',f'href="assets/site.css?v={style_version}"')
 pages=json.loads((source/'pages.json').read_text())
 for filename,settings in pages.items():
     page=settings['page'];text=template
