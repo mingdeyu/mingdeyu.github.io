@@ -8,11 +8,11 @@
     },
     "404.html": {
       "bytes": 642418,
-      "sha256": "4ef243c144e0d76990f7ba1267e172e4312ddc83939a4c2e7ee458eef64535ed"
+      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
     },
     "about.html": {
       "bytes": 642418,
-      "sha256": "4ef243c144e0d76990f7ba1267e172e4312ddc83939a4c2e7ee458eef64535ed"
+      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
     },
     "assets/analytics.js": {
       "bytes": 1439,
@@ -1075,8 +1075,8 @@
       "sha256": "aecc05ae811593e0da672a5c6bee57097bec83ab0514357ff2bff4faf6afb05d"
     },
     "assets/site.css": {
-      "bytes": 66395,
-      "sha256": "b47538d98c65565d8dc49e269944652197798b4c274ac52c7ed1b0bb9169084c"
+      "bytes": 66378,
+      "sha256": "fd4da1df9e14e579c00fe08a89a91f9c4b63929da6f5a5049a525fbdb0222f33"
     },
     "assets/vendor/Lucide-LICENSE.txt": {
       "bytes": 3208,
@@ -1112,11 +1112,11 @@
     },
     "contact.html": {
       "bytes": 642338,
-      "sha256": "dd20ec8cc9c68aef7f0046ce9a5768933c3304e0c2e8a06c749370b03cb28faf"
+      "sha256": "62ba1c6459aa51fed8c67528729e4770b2f96fc76b4ec2f02022d79bdf569af3"
     },
     "education.html": {
       "bytes": 642423,
-      "sha256": "d9c6b7ecafb3fde1af4b45c9747aee1dec6edc60d65f218de61714ba61206dd7"
+      "sha256": "1f382e0d18e9688ad292ad75051d48a9b9dd10617a1d46e6074b87a994812400"
     },
     "favicon.svg": {
       "bytes": 221,
@@ -1124,7 +1124,7 @@
     },
     "index.html": {
       "bytes": 642418,
-      "sha256": "4ef243c144e0d76990f7ba1267e172e4312ddc83939a4c2e7ee458eef64535ed"
+      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
     },
     "r-model-summary/classification-2-matern2.5.html": {
       "bytes": 9337,
@@ -1260,7 +1260,7 @@
     },
     "research.html": {
       "bytes": 642501,
-      "sha256": "460cfc568710cc5155c9cda12008fc7886ce9acc54f8b42b51cbe8ef9ff71bf4"
+      "sha256": "737d3dca797a6e340d5c394e55147b2898e009e5b0035cfc808ff97672d9fb4d"
     },
     "robots.txt": {
       "bytes": 71,
@@ -1276,7 +1276,7 @@
     },
     "software.html": {
       "bytes": 642519,
-      "sha256": "8d10823608e79b76d6fb80c41ecbe6385d6996d850e05e5628a7164d0f899536"
+      "sha256": "1be0b5af712332d741105a911c3734ad8997e206347604614721404684b58fe8"
     },
     "step-native-output/python-10-2.png": {
       "bytes": 34655,
@@ -1656,11 +1656,11 @@
     },
     "talks.html": {
       "bytes": 642338,
-      "sha256": "02f15f55387285cf1dc4c6b56b4b5f9e993b4c43737c90d46cf7da4dfdaf7af5"
+      "sha256": "6035ec6cea60c1d375e883e6f6f60c9d6caca42b9d25785845eba0b5ca639c86"
     },
     "teaching.html": {
       "bytes": 642423,
-      "sha256": "d9c6b7ecafb3fde1af4b45c9747aee1dec6edc60d65f218de61714ba61206dd7"
+      "sha256": "1f382e0d18e9688ad292ad75051d48a9b9dd10617a1d46e6074b87a994812400"
     }
   }
 }

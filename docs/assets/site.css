@@ -227,7 +227,7 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 
 
 #dm-software-designs [data-gallery-panel="priors"] { min-height:0; }
-#dm-software-designs .ds-deep-intro,#dm-software-designs .ds-section-intro { max-width:960px; margin:0 0 22px; }
+#dm-software-designs .ds-deep-intro,#dm-software-designs .ds-section-intro { margin:0 0 22px; }
 #dm-software-designs .ds-section-intro { max-width:790px; }
 #dm-software-designs .ds-deep-layout { display:grid; grid-template-columns:minmax(0,1fr) 244px; gap:42px; align-items:start; padding-top:4px; }
 #dm-software-designs .ds-deep-plot,#dm-software-designs .ds-deep-controls { border:1px solid var(--ds-rule); border-radius:4px; background:var(--ds-paper); padding:14px; }
