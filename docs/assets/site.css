@@ -189,7 +189,7 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 #dm-software-designs .ln-results{min-width:0;border:1px solid var(--ds-rule);border-radius:4px;background:var(--ds-wash);padding:14px}
 #dm-software-designs .ln-network{display:grid;grid-template-columns:minmax(0,1fr) 35px minmax(0,1fr) 35px minmax(0,1fr);align-items:stretch;margin:0 0 22px}
 #dm-software-designs .ln-model{min-width:0;border:1px solid var(--ds-rule);border-radius:4px;background:var(--ds-paper);overflow:hidden}
-#dm-software-designs .ln-component{padding:11px 10px 0;text-align:center;font:600 13px/1.5 'Open Sans',sans-serif}
+#dm-software-designs .ln-component{position:relative;padding:11px 10px 0;text-align:center;font:600 13px/1.5 'Open Sans',sans-serif}
 #dm-software-designs .ln-component canvas{display:block;width:100%;height:104px;margin:5px 0 1px}
 #dm-software-designs .ln-budget{display:block;padding:1px 12px 10px;color:var(--ds-muted);font:400 12px/1.4 'Open Sans',sans-serif}
 #dm-software-designs .ln-budget-label{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px}
@@ -198,7 +198,7 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 #dm-software-designs .ln-edge{display:block;width:100%;height:12px;color:var(--ds-ink);align-self:center;overflow:visible}
 #dm-software-designs .ln-edge path{stroke:currentColor;stroke-width:1.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 #dm-software-designs .ln-chart-title{display:block;margin-bottom:8px;font:600 15px/1.5 'Open Sans',sans-serif}
-#dm-software-designs .ln-linked-model{padding:12px 12px 6px}
+#dm-software-designs .ln-linked-model{position:relative;padding:12px 12px 6px}
 #dm-software-designs .ln-linked-model .ln-chart-title{text-align:center}
 #dm-software-designs .ln-chart{display:block;width:100%;height:290px;touch-action:pan-y}
 #dm-software-designs .ln-legend{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 25px;margin:10px 0 8px;color:var(--ds-muted);font:400 12px/1.5 'Open Sans',sans-serif}
@@ -210,6 +210,15 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 #dm-software-designs .ln-status{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 #dm-software-designs .ln-status[data-visible]{position:static;display:block;width:auto;height:auto;overflow:visible;margin-top:8px;font-size:13px;color:var(--ds-muted)}
 #dm-software-designs .ln-explorer [hidden]{display:none}
+
+#dm-software-designs .ds-plot-loading{position:absolute;inset:0;z-index:2;display:grid;place-items:center;background:rgba(255,255,255,.97);pointer-events:none;opacity:1;visibility:visible;transition:opacity .18s ease,visibility .18s ease}
+#dm-software-designs .ds-loading-spinner{display:block;position:relative;box-sizing:border-box;width:20px;height:20px;border:2px solid rgba(0,0,0,.08);border-radius:50%;animation:dm-plot-spin .85s linear infinite}
+#dm-software-designs .ds-loading-spinner::after{content:"";position:absolute;inset:-2px;border-radius:50%;background:conic-gradient(from 45deg,transparent 0deg 100deg,rgba(0,0,0,.04) 160deg,rgba(0,0,0,.14) 215deg,rgba(0,0,0,.34) 265deg,rgba(0,0,0,.7) 310deg,#111 360deg);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1.7px));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1.7px))}
+#dm-software-designs [data-plot-state=ready] .ds-plot-loading{opacity:0;visibility:hidden}
+#dm-software-designs [data-plot-state=error] .ds-plot-loading{opacity:0;visibility:hidden}
+#dm-software-designs [data-plot-state=ready] .ds-loading-spinner,#dm-software-designs [data-plot-state=error] .ds-loading-spinner{animation:none}
+@keyframes dm-plot-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#dm-software-designs .ds-loading-spinner{animation:none}#dm-software-designs .ds-plot-loading{transition:none}}
 @media(max-width:620px){#dm-software-designs .ln-results{padding:10px}}
 @media(max-width:520px){#dm-software-designs .ln-network{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)}#dm-software-designs .ln-component{padding:8px 5px 0;font-size:12px}#dm-software-designs .ln-component canvas{height:78px}#dm-software-designs .ln-budget{font-size:11px;padding:0 7px 8px}#dm-software-designs .ln-budget-label{flex-wrap:wrap;gap:2px}#dm-software-designs .ln-chart{height:270px}#dm-software-designs .ln-legend{gap:8px 17px}}
 

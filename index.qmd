@@ -1,8 +1,0 @@
----
-page-layout: custom
-comments: false
----
-
-<div style="width: 100vw; height: 75vh; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0; overflow: hidden;">
-  <img src="dgp_path.gif" alt="Landing Page GIF" style="width: 100%; height: auto; display: block; margin: 0; padding: 0;">
-</div>

@@ -8,6 +8,9 @@
 /tutorial.html
 /*.gif
 
+# Legacy landing-page source retained locally; the new site uses site-source/.
+/index.qmd
+
 # Local builds from site-source/build.py; docs/ is the publishing folder.
 /site/
 /website-build/

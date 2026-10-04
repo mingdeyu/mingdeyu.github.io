@@ -3,7 +3,7 @@
 <title>@@TITLE@@</title><meta name="description" content="@@DESCRIPTION@@"><link rel="canonical" href="@@CANONICAL@@">
 <meta property="og:title" content="@@TITLE@@"><meta property="og:description" content="@@DESCRIPTION@@"><meta property="og:type" content="website"><meta property="og:url" content="@@CANONICAL@@">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/vendor/open-sans.css"><link rel="stylesheet" href="assets/site.css">
-<script defer src="assets/vendor/lucide.js"></script><script defer src="assets/site-state.js"></script><script defer src="assets/linked-config.js"></script><script defer src="assets/linked-loader.js"></script><script defer src="assets/site-runtime.js"></script>
+<script defer src="assets/vendor/lucide.js"></script><script defer src="assets/site-state.js"></script><script defer src="assets/linked-config.js"></script><script defer src="assets/linked-loader.js"></script><script defer src="assets/plot-loading.js"></script><script defer src="assets/analytics.js"></script><script defer src="assets/site-runtime.js"></script>
 </head><body><a class="dm-skip-link" href="#dm-main-@@PAGE@@">Skip to content</a>
 
 
@@ -302,27 +302,28 @@
 
  </section>
 
-<section class="ds-gallery-stage ln-explorer" data-gallery-panel="network" aria-label="Interactive linked emulation" hidden>
-  <div class="ln-results">
+<section class="ds-gallery-stage ln-explorer" data-gallery-panel="network" data-plot-state="loading" aria-label="Interactive linked emulation" hidden>
+  <div class="ln-results" data-plot-results aria-busy="true">
   <div class="ln-network" aria-label="Model 1 feeds Model 2, which feeds Model 3">
    <article class="ln-model">
-    <div class="ln-component"><span>Model 1</span><canvas data-ln-mini="0" role="img" aria-label="Model 1 true function, DGP prediction and training points"></canvas></div>
+    <div class="ln-component"><span>Model 1</span><canvas data-ln-mini="0" role="img" aria-label="Model 1 true function, DGP prediction and training points"></canvas><span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span></div>
     <label class="ln-budget"><span class="ln-budget-label">Training points<output data-ln-count-value="0">5</output></span><input class="ds-deep-range cursor-interaction" type="range" min="5" max="20" step="1" value="5" data-ln-count="0" aria-label="Model 1 training points" aria-valuetext="5 training points"></label>
    </article>
    <svg class="ln-edge" viewBox="0 0 35 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 6H31M26 2L31 6L26 10"/></svg>
    <article class="ln-model">
-    <div class="ln-component"><span>Model 2</span><canvas data-ln-mini="1" role="img" aria-label="Model 2 true function, DGP prediction and training points"></canvas></div>
+    <div class="ln-component"><span>Model 2</span><canvas data-ln-mini="1" role="img" aria-label="Model 2 true function, DGP prediction and training points"></canvas><span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span></div>
     <label class="ln-budget"><span class="ln-budget-label">Training points<output data-ln-count-value="1">5</output></span><input class="ds-deep-range cursor-interaction" type="range" min="5" max="20" step="1" value="5" data-ln-count="1" aria-label="Model 2 training points" aria-valuetext="5 training points"></label>
    </article>
    <svg class="ln-edge" viewBox="0 0 35 12" preserveAspectRatio="none" aria-hidden="true"><path d="M3 6H31M26 2L31 6L26 10"/></svg>
    <article class="ln-model">
-    <div class="ln-component"><span>Model 3</span><canvas data-ln-mini="2" role="img" aria-label="Model 3 true function, DGP prediction and training points"></canvas></div>
+    <div class="ln-component"><span>Model 3</span><canvas data-ln-mini="2" role="img" aria-label="Model 3 true function, DGP prediction and training points"></canvas><span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span></div>
     <label class="ln-budget"><span class="ln-budget-label">Training points<output data-ln-count-value="2">5</output></span><input class="ds-deep-range cursor-interaction" type="range" min="5" max="20" step="1" value="5" data-ln-count="2" aria-label="Model 3 training points" aria-valuetext="5 training points"></label>
    </article>
   </div>
   <article class="ln-model ln-linked-model" aria-label="Linked model">
   <span class="ln-chart-title" data-ln-title>Linked model</span>
   <canvas class="ln-chart cursor-interaction" data-ln-main role="img" aria-label="True system function and linked DGP prediction with uncertainty. Hover anywhere in the plot to highlight corresponding prediction locations in all three component plots; tap on a touch screen."></canvas>
+  <span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span>
   <div class="ln-legend" aria-label="Plot legend"><span><span class="ln-swatch ln-swatch-truth"></span>True function</span><span><span class="ln-swatch"></span>Prediction</span><span><span class="ln-swatch ln-swatch-band"></span>Uncertainty</span><span><span class="ln-swatch ln-swatch-observations"></span>Training points</span></div>
   </article>
   </div>
@@ -330,24 +331,26 @@
  </section>
 
     
- <section class="ds-gallery-stage sq-explorer" data-gallery-panel="adaptive" aria-label="Interactive sequential design" hidden>
-  <div class="sq-results">
+ <section class="ds-gallery-stage sq-explorer" data-gallery-panel="adaptive" data-plot-state="loading" aria-label="Interactive sequential design" hidden>
+  <div class="sq-results" data-plot-results aria-busy="true">
   <div class="sq-plots">
    <figure class="sq-card">
     <figcaption class="sq-heading">Simulator</figcaption>
     <canvas class="sq-map" data-sq-truth role="img" aria-label="True two-dimensional simulator surface on the unit square"></canvas>
+    <span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span>
     <div class="sq-scale"><span data-sq-truth-min>−1</span><span class="sq-scale-bar"></span><span data-sq-truth-max>1</span></div>
     <div class="sq-legend" aria-hidden="true"></div>
    </figure>
    <figure class="sq-card">
     <figcaption class="sq-heading"><span data-sq-title>Emulator</span><span class="sq-field-switch" role="group" aria-label="Emulator field"><button type="button" data-sq-field="mean" aria-pressed="true">Mean</button><button type="button" data-sq-field="sd" aria-pressed="false">SD</button></span></figcaption>
     <canvas class="sq-map" data-sq-emulator role="img" tabindex="0" aria-label="DGP prediction with initial, added and latest training points"></canvas>
+    <span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span>
     <div class="sq-scale"><span data-sq-scale-min>−1</span><span class="sq-scale-bar"></span><span data-sq-scale-max>1</span></div>
     <div class="sq-legend" aria-label="Training point legend"><span><span class="sq-marker sq-marker-initial"><svg viewBox="0 0 9 9" aria-hidden="true"><path d="M4.5 1L8 7.5H1Z" fill="#111" stroke="white" stroke-width=".6" stroke-linejoin="round"/></svg></span>Initial</span><span><span class="sq-marker sq-marker-added"></span>Added</span></div>
     <span class="sq-point-tooltip" data-sq-point-tooltip id="sq-point-tooltip" role="tooltip" hidden></span>
    </figure>
   </div>
-  <figure class="sq-error"><figcaption class="sq-error-heading"><span>NRMSE</span><output data-sq-rmse>—</output></figcaption><canvas data-sq-error role="img" aria-label="Out-of-sample RMSE normalized by the true function range, shown as a percentage against training size"></canvas><span class="sq-rmse-tooltip" data-sq-rmse-tooltip role="tooltip" hidden></span></figure>
+  <figure class="sq-error"><figcaption class="sq-error-heading"><span>NRMSE</span><output data-sq-rmse>—</output></figcaption><canvas data-sq-error role="img" aria-label="Out-of-sample RMSE normalized by the true function range, shown as a percentage against training size"></canvas><span class="ds-plot-loading" data-plot-loading aria-hidden="true"><span class="ds-loading-spinner" aria-hidden="true"></span></span><span class="sq-rmse-tooltip" data-sq-rmse-tooltip role="tooltip" hidden></span></figure>
   </div>
   <div class="sq-controls">
    <label class="sq-slider"><span class="sq-slider-label">Training points<output data-sq-count>5</output></span><span class="sq-range-wrap"><input class="ds-deep-range cursor-interaction" data-sq-range type="range" min="5" max="50" step="1" value="5" aria-label="Training points" aria-valuetext="5 training points" disabled><span class="sq-hint" data-sq-hint id="sq-slider-tip" role="tooltip" hidden>Drag to add points</span></span></label>

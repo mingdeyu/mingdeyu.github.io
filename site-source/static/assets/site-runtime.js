@@ -1257,6 +1257,7 @@ globalThis.DmLinkedPredictor={create:function(data){
 
 globalThis.DmLinkedExplorer={create({root,saved,onChange}){
  const el=root.querySelector('.ln-explorer'),qs=s=>el.querySelector(s),qa=s=>[...el.querySelectorAll(s)];
+ const loading=DmPlotLoading.mount(el);
  const model=DmLinkedState.create(saved),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
  const guideKey='dgpsi-linked-slider-guide-v1';
  let sliderGuideCompleted=saved?.sliderGuideCompleted===true,sliderGuide=null;
@@ -1266,13 +1267,14 @@ globalThis.DmLinkedExplorer={create({root,saved,onChange}){
  const provider=globalThis.DmLinkedAssets?DmLinkedLoader.create(globalThis.DmLinkedAssets):null;
  let loadStarted=false,providerBusy=false,failedKey=null;
  function retry(message){
+  if(!displayed)loading.error();
   const status=qs('[data-ln-status]');status.dataset.visible='';status.textContent=message+' ';
   const button=document.createElement('button');button.type='button';button.className='ds-button';button.textContent='Retry';
-  button.addEventListener('click',()=>{status.textContent='';delete status.dataset.visible;failedKey=null;if(!data)loadStarted=false;draw();});status.append(button);
+  button.addEventListener('click',()=>{status.textContent='';delete status.dataset.visible;failedKey=null;if(!data)loadStarted=false;if(!displayed)loading.loading();draw();});status.append(button);
  }
  function ensureData(){
   if(!provider||loadStarted||!el.getClientRects().length)return;
-  loadStarted=true;el.setAttribute('aria-busy','true');qs('[data-ln-title]').textContent='Loading predictions';
+  loadStarted=true;loading.loading();el.setAttribute('aria-busy','true');qs('[data-ln-status]').textContent='Loading predictions…';
   provider.load().then(d=>{data=d;el.dataset.lnPredictionEngine=provider.engine();el.removeAttribute('aria-busy');qa('input').forEach(e=>e.disabled=false);draw();})
    .catch(()=>{el.removeAttribute('aria-busy');qs('[data-ln-title]').textContent='Linked model';retry('Predictions could not load.');});
  }
@@ -1310,7 +1312,7 @@ globalThis.DmLinkedExplorer={create({root,saved,onChange}){
  window.addEventListener('resize',updateSliderGuide,{passive:true});
  new MutationObserver(updateSliderGuide).observe(el,{attributes:true,attributeFilter:['hidden']});
  document.fonts?.ready.then(updateSliderGuide);
- qa('input').forEach(e=>e.disabled=true);qs('[data-ln-title]').textContent='Loading predictions';
+ qa('input').forEach(e=>e.disabled=true);
  if(!provider){
  const source=root.querySelector('#ln-real-data'),bytes=Uint8Array.from(atob(source.textContent.trim()||globalThis.DmLinkedPayload),c=>c.charCodeAt(0));
  new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate'))).json().then(d=>{
@@ -1324,13 +1326,14 @@ globalThis.DmLinkedExplorer={create({root,saved,onChange}){
    worker.postMessage({setup:d});
   }catch{worker=null;el.dataset.lnPredictionEngine='main';predictor=DmLinkedPredictor.create(d);}
   qa('input').forEach(e=>e.disabled=false);draw();
- }).catch(()=>{qs('[data-ln-title]').textContent='Predictions could not load';});
+ }).catch(()=>{loading.error();qs('[data-ln-title]').textContent='Predictions could not load';});
  }
  const lerp=(a,b,t)=>a+(b-a)*t;
  function target(s){
   const key=model.key();let main=predictions.get(key);
   if(!main&&provider){
    if(!providerBusy&&failedKey!==key){
+    if(!displayed)loading.loading();
     providerBusy=true;el.setAttribute('aria-busy','true');qs('[data-ln-status]').dataset.visible='';qs('[data-ln-status]').textContent='Updating predictions…';
     provider.predict(s.counts).then(curve=>{predictions.set(key,curve);if(predictions.size>64)predictions.delete(predictions.keys().next().value);providerBusy=false;el.removeAttribute('aria-busy');qs('[data-ln-status]').textContent='';draw();})
      .catch(()=>{providerBusy=false;el.removeAttribute('aria-busy');failedKey=key;retry('Predictions could not load.');if(model.key()!==key)draw();});
@@ -1377,7 +1380,7 @@ globalThis.DmLinkedExplorer={create({root,saved,onChange}){
   }
  }
  function draw(){
-  if(!data){ensureData();return;}const s=model.settings(),key=model.key();
+  if(!data){if(!loadStarted)loading.loading();ensureData();return;}const s=model.settings(),key=model.key();
   if(previous!==key){const next=target(s);if(next){if(displayed&&!reduced)transition={from:current(),to:next,elapsed:0};else{displayed=next;transition=null;}previous=key;qs('[data-ln-title]').textContent='Linked model';if(provider){delete qs('[data-ln-status]').dataset.visible;qs('[data-ln-status]').textContent=`System updated: ${s.counts.join(', ')} training points.`;}}}
   controls();if(!displayed)return;
   const curves=current(),dots=probe===null?null:DmLinkedProbe.at(probe,curves.mini,data.componentDomains,curves.main);
@@ -1387,6 +1390,7 @@ globalThis.DmLinkedExplorer={create({root,saved,onChange}){
    for(let j=0;j<3;j++){const n=shownCounts[j],canvas=qs(`[data-ln-mini="${j}"]`),training=data.components[`${j+1}-${n}`],points=training.X.map((x,i)=>[x,training.Y[i]]),highlight=dots?.components[j];plot(canvas,data.componentTruth[j],curves.mini[j],points,highlight||null,true,[0,1],data.yRanges[j],null,data.componentDomains[j]);canvas.setAttribute('aria-label',`Model ${j+1} true function and two-layer DGP prediction with ${n} training points on input domain 0 to 1.`+(highlight&&highlight.x>=0&&highlight.x<=1?` Highlighted input ${highlight.x.toFixed(3)} on the component prediction.`:''));}
    const canvas=qs('[data-ln-main]');plot(canvas,data.truth,curves.main,[],dots?.system||null,false,[0,1],data.yRanges[3],probeY);canvas.dataset.linkedCase=previous;
    canvas.setAttribute('aria-label',`Linked DGP system prediction and propagated uncertainty with ${shownCounts.join(', ')} training points in Models 1, 2 and 3. Hover anywhere in the plot to highlight corresponding component locations; tap on touch screens.`+(dots?` Input ${probe.toFixed(3)}, prediction ${dots.system.y.toFixed(3)}.`:''));
+   loading.ready();
   }
   if(transition)resume();
  }
@@ -1430,6 +1434,7 @@ globalThis.DmSequentialState={create(saved){
 
 globalThis.DmSequentialExplorer={create({root,saved,onChange}){
  const el=root.querySelector('.sq-explorer'),qs=s=>el.querySelector(s),qa=s=>[...el.querySelectorAll(s)];
+ const loading=DmPlotLoading.mount(el);
  const sliderGuideVersion=1;
  const model=DmSequentialState.create({...saved,hintDismissed:saved?.sliderGuideVersion===sliderGuideVersion&&saved?.hintDismissed===true}),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
  const fieldSwitch=DmSegmentedIndicator.mount(qs('.sq-field-switch'),'[data-sq-field]');
@@ -1446,7 +1451,7 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
  const persist=()=>onChange?.(settings());
  function dismissHint(){if(model.settings().hintDismissed)return;model.dismissHint();try{localStorage.setItem(hintKey,'dismissed');}catch{}qs('[data-sq-hint]').hidden=true;qs('[data-sq-range]').removeAttribute('aria-describedby');persist();}
  async function ensureData(){
-  if(data)return data;if(load)return load;el.setAttribute('aria-busy','true');
+  if(data)return data;if(load)return load;loading.loading();el.setAttribute('aria-busy','true');qs('[data-sq-status]').textContent='Loading plots…';
   load=(async()=>{
    if(!globalThis.DmSequentialPayload)await new Promise((resolve,reject)=>{
     const script=document.createElement('script');script.src='sequential-explorer-data.js';
@@ -1464,7 +1469,7 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
    if(offset!==buffer.byteLength)throw new Error('Invalid sequential fields');
    data=d;el.dataset.sqDataSource='dgpsi::design + stats::predict';el.removeAttribute('aria-busy');
    qa('button,input').forEach(e=>e.disabled=false);draw();return data;
-  })().catch(error=>{el.removeAttribute('aria-busy');qs('[data-sq-load-error]').hidden=false;console.error(error);return null;});
+  })().catch(error=>{loading.error();el.removeAttribute('aria-busy');qs('[data-sq-load-error]').hidden=false;qs('[data-sq-status]').textContent='Plots could not load.';console.error(error);return null;});
   return load;
  }
  function geometry(canvas){
@@ -1571,7 +1576,7 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
   const hint=qs('[data-sq-hint]');hint.hidden=s.hintDismissed||!data;
   if(!hint.hidden){
    const r=range.getBoundingClientRect(),parent=hint.parentElement.getBoundingClientRect(),thumb=matchMedia('(pointer:coarse)').matches?16:10;
-   hint.style.left=(r.left-parent.left+thumb+(s.n-5)/45*(r.width-thumb)+12)+'px';
+   hint.style.left=(r.left-parent.left+thumb+(s.n-5)/45*(r.width-thumb)+8)+'px';
    hint.style.top=(r.top-parent.top+r.height/2-hint.offsetHeight/2)+'px';
    range.setAttribute('aria-describedby','sq-slider-tip');DmGuideShape.roundTip(hint,'left');
   }else range.removeAttribute('aria-describedby');
@@ -1590,7 +1595,8 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
   previous=index;
  }
  function draw(){
-  controls();if(!visible())return;
+   controls();if(!visible())return;
+   if(!data&&!load)loading.loading();
   if(!data){ensureData();return;}
   updateStage();const s=model.settings(),index=s.n-5,stage=data.stages[index],curves=currentFields();
   el.dataset.sqN=String(s.n);el.dataset.sqField=s.field;el.dataset.sqMarkerStyle='plain';el.dataset.sqPalette=data.paletteName;
@@ -1601,7 +1607,7 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
   drawSurface(qs('[data-sq-truth]'),data.truth,data.meanRange);
   drawSurface(qs('[data-sq-emulator]'),curves[s.field],domain,stage.X,model.markers(),s.field==='sd'?data.sdPalette:data.palette);
   qs('[data-sq-emulator]').setAttribute('aria-label',`DGP ${s.field==='sd'?'predictive standard deviation':'predicted mean'} with five initial training points shown as black triangles and ${s.n-5} VIGF additions shown as red dots. The markers have thin white outlines.${s.n>5?(pulseMode==='arrival'?' The latest added point starts at its largest size and shrinks to normal before the next point is added.':' The latest added point keeps pulsing until the next point is added.'):''}`);
-  errorChart(index);controls();
+   errorChart(index);controls();if(el.dataset.plotState!=='ready')qs('[data-sq-status]').textContent='Plots ready.';loading.ready();
   if(transition||model.playing()||(!reduced&&s.n>5&&(pulseMode==='continuous'||performance.now()-pulseStart<arrivalDuration)))resume();
  }
  function resume(){if(!frame)frame=requestAnimationFrame(tick);}
@@ -1982,4 +1988,3 @@ globalThis.DmSequentialExplorer={create({root,saved,onChange}){
   panels.forEach(draw);requestAnimationFrame(frame);
   loadGradent().catch(error=>{const p=panels.find(v=>v.kind==='gradient');p.status.textContent='DGP results could not be loaded';p.el.dataset.dataError=error.message;console.error(error);});
 })();
-
