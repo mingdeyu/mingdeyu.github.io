@@ -7,12 +7,12 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "404.html": {
-      "bytes": 642418,
-      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
+      "bytes": 642424,
+      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
     },
     "about.html": {
-      "bytes": 642418,
-      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
+      "bytes": 642424,
+      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
     },
     "assets/analytics.js": {
       "bytes": 1439,
@@ -1075,8 +1075,8 @@
       "sha256": "aecc05ae811593e0da672a5c6bee57097bec83ab0514357ff2bff4faf6afb05d"
     },
     "assets/site.css": {
-      "bytes": 66378,
-      "sha256": "fd4da1df9e14e579c00fe08a89a91f9c4b63929da6f5a5049a525fbdb0222f33"
+      "bytes": 66403,
+      "sha256": "bf4a7f73e510bd81448eb46e9111dd35938d9f8b3aaacd8adada4759724eb608"
     },
     "assets/vendor/Lucide-LICENSE.txt": {
       "bytes": 3208,
@@ -1111,20 +1111,20 @@
       "sha256": "6cfe094d7eadeb190edacc8ed9683d51290111854deec6abc3cd62a5ac7f7b06"
     },
     "contact.html": {
-      "bytes": 642338,
-      "sha256": "62ba1c6459aa51fed8c67528729e4770b2f96fc76b4ec2f02022d79bdf569af3"
+      "bytes": 642344,
+      "sha256": "f4473a0f8b3b278b15b3b3f31f0d6cdfe19c875eb25b6ffd1bd698db2ebec12b"
     },
     "education.html": {
-      "bytes": 642423,
-      "sha256": "1f382e0d18e9688ad292ad75051d48a9b9dd10617a1d46e6074b87a994812400"
+      "bytes": 642429,
+      "sha256": "39b55c295b42eb5418bda5a484ba0b7273eda4adaf3040651408b9dc4a03e210"
     },
     "favicon.svg": {
       "bytes": 221,
       "sha256": "d368fd30a3d3dd59761719833fdf27000d80d259a767dd9f8710a49575113486"
     },
     "index.html": {
-      "bytes": 642418,
-      "sha256": "204a70bde7d2da6c13218f218d3f2cdfd353e261f683a2517674dfa0c46a4d3a"
+      "bytes": 642424,
+      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
     },
     "r-model-summary/classification-2-matern2.5.html": {
       "bytes": 9337,
@@ -1259,8 +1259,8 @@
       "sha256": "1ac6bfcf8d93c6ab4112880df832974f08b1a65f19499c3ab8fc8e5aa845d1be"
     },
     "research.html": {
-      "bytes": 642501,
-      "sha256": "737d3dca797a6e340d5c394e55147b2898e009e5b0035cfc808ff97672d9fb4d"
+      "bytes": 642507,
+      "sha256": "aa78c301a2174a38880ff3022b055cb1888cc6361ad075a6e9a8b14f979c0994"
     },
     "robots.txt": {
       "bytes": 71,
@@ -1275,8 +1275,8 @@
       "sha256": "cd8f982df499e7455791034e35d248449c262aa831cd8bb263d67d5a037ea32c"
     },
     "software.html": {
-      "bytes": 642519,
-      "sha256": "1be0b5af712332d741105a911c3734ad8997e206347604614721404684b58fe8"
+      "bytes": 642525,
+      "sha256": "8224c7d613ca3efe16659ee9eb6a66cdd9c1909aa8ae4dfc6ee928ce248863d2"
     },
     "step-native-output/python-10-2.png": {
       "bytes": 34655,
@@ -1655,12 +1655,12 @@
       "sha256": "ac95124aa50cb3ff7bc623a990f078c0b461eecd0a504c27d2889ecdee852f1e"
     },
     "talks.html": {
-      "bytes": 642338,
-      "sha256": "6035ec6cea60c1d375e883e6f6f60c9d6caca42b9d25785845eba0b5ca639c86"
+      "bytes": 642344,
+      "sha256": "5f5c5b3205e9ca1563a5ccb0ec466e33fd2a32cf3992aefd9918c5344353fe3a"
     },
     "teaching.html": {
-      "bytes": 642423,
-      "sha256": "1f382e0d18e9688ad292ad75051d48a9b9dd10617a1d46e6074b87a994812400"
+      "bytes": 642429,
+      "sha256": "39b55c295b42eb5418bda5a484ba0b7273eda4adaf3040651408b9dc4a03e210"
     }
   }
 }

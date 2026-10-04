@@ -369,7 +369,7 @@ html{color-scheme:light;background:#fff}body{margin:0;background:#fff;color:#222
 #dm-software-designs .ds-choices { display:inline-flex; flex-wrap:wrap; align-items:center; max-width:100%; gap:4px; margin:25px 0; padding:4px; background:#eee; border-radius:6px; }
 #dm-software-designs .ds-choice { font:400 14px/1.5 'Open Sans',sans-serif; text-align:left; background:transparent; color:var(--ds-muted); padding:8px 16px; border:0; border-radius:4px; display:block; }
 #dm-software-designs .ds-choice[aria-pressed=true] { background:var(--ds-paper); color:#b92110; }
-#dm-software-designs .ds-choice:hover { color:var(--ds-ink); }
+#dm-software-designs .ds-choice:hover:not([aria-pressed=true]) { color:var(--ds-ink); }
 #dm-software-designs .ds-choice strong { display:block; font-weight:600; font-size:15px; margin:0; }
 #dm-software-designs .ds-choice span { color:var(--ds-muted); font-size:13px; }
 #dm-software-designs .ds-gallery-stage { min-height:430px; }
