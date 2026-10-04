@@ -41,7 +41,7 @@
           <li><time datetime="2026-08">Aug 2026:</time> Our <a href="https://arxiv.org/abs/2503.16027" target="_blank" rel="noopener noreferrer">paper on identifying sharp transitions in expensive simulators</a> has been accepted for publication in <em>SIAM/ASA Journal on Uncertainty Quantification</em>.</li>
           <li><time datetime="2026-07">Jul 2026:</time> I have been promoted to Associate Professor at the UCL School of Management.</li>
           <li><time datetime="2026-07">Jul 2026:</time> Together with <a href="https://profiles.ucl.ac.uk/3850" target="_blank" rel="noopener noreferrer">Serge Guillas</a> and <a href="https://profiles.ucl.ac.uk/72757-alejandro-diaz-de-la-o" target="_blank" rel="noopener noreferrer">Alex Diaz</a>, I am organising the invited session <a href="https://coupled2027.cimne.com/event/area/9b0d4e6c-5f2a-11f1-8fc4-000c29ddfc0c" target="_blank" rel="noopener noreferrer">Coupling Machine Learning Models for Multi-Physics and Multi-Component Systems</a> at <a href="https://coupled2027.cimne.com/" target="_blank" rel="noopener noreferrer">COUPLED 2027</a> in Palma de Mallorca, Spain, in June 2027. Please reach out if you are interested in giving a talk.</li>
-          <li><time datetime="2026-03">Mar 2026:</time> Our new preprint on <a href="https://arxiv.org/abs/2603.24538" target="_blank" rel="noopener noreferrer">scalable deep Gaussian process emulation for non-Gaussian responses</a> is now available on arXiv.</li>
+          <li><time datetime="2026-03">Mar 2026:</time> Our new preprint on <a href="https://arxiv.org/abs/2603.24538" target="_blank" rel="noopener noreferrer">scalable deep Gaussian process emulation for simulators with non-Gaussian responses</a> is now available on arXiv.</li>
         </ul>
       </section>
     </main>
@@ -242,7 +242,7 @@
      <div class="ds-gallery-get-started" data-gallery-install></div>
     </div>
     <div class="ds-choices" aria-label="Package demonstrations">
-     <button class="ds-choice cursor-interaction" type="button" data-gallery="priors" aria-pressed="true"><strong>Intro</strong></button>
+     <button class="ds-choice cursor-interaction" type="button" data-gallery="priors" aria-pressed="true"><strong>Introduction</strong></button>
      <button class="ds-choice cursor-interaction" type="button" data-gallery="emulation" aria-pressed="false"><strong>Deep GP emulation</strong></button>
      <button class="ds-choice cursor-interaction" type="button" data-gallery="network" aria-pressed="false"><strong>Linked emulation</strong></button>
      <button class="ds-choice cursor-interaction" type="button" data-gallery="adaptive" aria-pressed="false"><strong>Sequential design</strong></button>
@@ -250,6 +250,7 @@
     
  
  <section class="ds-gallery-stage de-demo" data-gallery-panel="emulation" aria-label="Deep GP emulation code demonstration" hidden>
+  <p class="ds-section-intro">Deep Gaussian processes implemented in <strong>dgpsi</strong> can emulate simulators with Gaussian or non-Gaussian responses, supporting both regression and classification. Adjust the highlighted code values and run each stage in R or Python to explore training, prediction and validation of emulators with dgpsi.</p>
   <div class="de-example-switch" aria-label="Emulation example">
    <button type="button" class="cursor-interaction" data-de-example="step" aria-pressed="true">Regression</button>
    <button type="button" class="cursor-interaction" data-de-example="iris" aria-pressed="false">Classification</button>
@@ -269,7 +270,7 @@
    </div>
    <pre class="sc-code"><code data-sc-code></code></pre>
    <div class="sc-execution" data-sc-execution role="progressbar" aria-label="Code chunk execution" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
-   <div class="de-run-row"><button type="button" class="ds-button ds-button-primary cursor-interaction" data-sc-run><i data-lucide="play" aria-hidden="true"></i><span>Run</span></button><span class="de-run-state" data-sc-state role="status" aria-live="polite"></span></div>
+   <div class="de-run-row"><button type="button" class="ds-button ds-button-primary cursor-interaction" data-sc-run><i data-lucide="play" aria-hidden="true"></i><span>Run</span></button><span class="de-run-state" data-sc-state role="status" aria-live="polite"></span><button type="button" class="ds-button ds-button-primary cursor-interaction" data-sc-next hidden disabled>Next<i class="de-next-icon" data-lucide="chevron-right" aria-hidden="true"></i></button></div>
    <div class="sc-output" data-sc-output hidden>
     <div class="sc-output-heading"><span>Output</span><span data-sc-result-label></span></div>
     <div data-sc-result></div>
@@ -292,7 +293,7 @@
    </div>
    <pre class="sc-code"><code data-ic-code></code></pre>
    <div class="sc-execution" data-ic-execution role="progressbar" aria-label="Code chunk execution" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
-   <div class="de-run-row"><button type="button" class="ds-button ds-button-primary cursor-interaction" data-ic-run><i data-lucide="play" aria-hidden="true"></i><span>Run</span></button><span class="de-run-state" data-ic-state role="status" aria-live="polite"></span></div>
+   <div class="de-run-row"><button type="button" class="ds-button ds-button-primary cursor-interaction" data-ic-run><i data-lucide="play" aria-hidden="true"></i><span>Run</span></button><span class="de-run-state" data-ic-state role="status" aria-live="polite"></span><button type="button" class="ds-button ds-button-primary cursor-interaction" data-ic-next hidden disabled>Next<i class="de-next-icon" data-lucide="chevron-right" aria-hidden="true"></i></button></div>
    <div class="sc-output" data-ic-output hidden>
     <div class="sc-output-heading"><span>Output</span><span data-ic-result-label></span></div>
     <div data-ic-result></div>
@@ -303,6 +304,7 @@
  </section>
 
 <section class="ds-gallery-stage ln-explorer" data-gallery-panel="network" data-plot-state="loading" aria-label="Interactive linked emulation" hidden>
+  <p class="ds-section-intro">Linked emulation in <strong>dgpsi</strong> offers a divide-and-conquer approach to emulating complex model systems by combining emulators of their simpler component models. Add training points to each component to explore their impact on the linked emulator’s mean prediction and uncertainty.</p>
   <div class="ln-results" data-plot-results aria-busy="true">
   <div class="ln-network" aria-label="Model 1 feeds Model 2, which feeds Model 3">
    <article class="ln-model">
@@ -332,6 +334,7 @@
 
     
  <section class="ds-gallery-stage sq-explorer" data-gallery-panel="adaptive" data-plot-state="loading" aria-label="Interactive sequential design" hidden>
+  <p class="ds-section-intro">Sequential design uses existing data to select informative new simulator runs and iteratively refine an emulator. It helps target regions with greater uncertainty or more complex responses, particularly when the simulation budget is limited. Move the slider to see how sequential design implemented in <strong>dgpsi</strong> allocates new runs and refines the emulator.</p>
   <div class="sq-results" data-plot-results aria-busy="true">
   <div class="sq-plots">
    <figure class="sq-card">

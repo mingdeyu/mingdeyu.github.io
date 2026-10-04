@@ -5,15 +5,17 @@ globalThis.DmStableView={mount(root){
  if(!root)return;
  const view=root.ownerDocument.defaultView;
  root.addEventListener('click',event=>{
-  const tab=event.target.closest('[data-page],[data-gallery],[data-de-example],[data-sc-view],[data-ic-view],[data-sc-language],[data-ic-language],[data-sc-run],[data-ic-run]');
+  const tab=event.target.closest('[data-page],[data-gallery],[data-de-example],[data-sc-view],[data-ic-view],[data-sc-language],[data-ic-language],[data-sc-run],[data-ic-run],[data-sc-next],[data-ic-next]');
   if(!tab)return;
   // Local menu links must not send the browser to their placeholder hash.
   if(tab.matches('[data-page]')){if(event.button===0&&!event.metaKey&&!event.ctrlKey&&!event.shiftKey&&!event.altKey)event.preventDefault();return;}
-  const top=tab.getBoundingClientRect().top;
+  // Next disappears on an unrun chunk, so anchor its persistent Run button.
+  const anchor=tab.matches('[data-sc-next],[data-ic-next]')?tab.closest('.de-run-row').querySelector('[data-sc-run],[data-ic-run]'):tab;
+  const top=anchor.getBoundingClientRect().top;
   // Keep natural content heights; correct browser anchoring after layout settles.
   view.requestAnimationFrame(()=>view.requestAnimationFrame(()=>{
-   if(!tab.isConnected)return;
-   const shift=tab.getBoundingClientRect().top-top;
+   if(!anchor.isConnected)return;
+   const shift=anchor.getBoundingClientRect().top-top;
    if(Math.abs(shift)>.5)view.scrollBy({top:shift,behavior:'instant'});
   }));
  },true);
@@ -779,6 +781,19 @@ globalThis.DmTrainingOutput={
 
 ;
 
+globalThis.DmChunkNext={
+ view(s,ready=true){
+  const stages=['prepare','fit','predict','validate'],index=stages.indexOf(s.view);
+  return ready&&!s.working&&!s.prerequisite&&s.done[s.view]&&index>=0?stages[index+1]||null:null;
+ },
+ update(button,status,s,ready){
+  const next=this.view(s,ready);
+  button.hidden=!next;button.disabled=!next;
+  button.setAttribute('aria-label',next?'Next: '+({fit:'Train',predict:'Predict',validate:'Validate'}[next]):'Next');
+  status.classList.toggle('de-run-state-next',!!next);
+ }
+};
+
 /* A recorded result belongs to one chunk and one valid package environment. */
 globalThis.DmStepChunks={create(saved,{trainingDuration=()=>2400,now=Date.now}={}){
  const names=['prepare','fit','predict','validate'],duration={prepare:350,fit:2400,predict:400,validate:650};
@@ -949,6 +964,7 @@ globalThis.DmStepExplorer={create({root,saved,onChange}){
   syncClock();const s=model.snapshot();qa('[data-sc-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.scLanguage===s.language)));qa('[data-sc-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.scView===s.view)));
   const run=qs('[data-sc-run]');run.disabled=s.working||!!s.prerequisite||!data;run.querySelector('span').textContent=s.done[s.view]?'Run again':'Run';
   qs('[data-sc-state]').textContent=loadFailed?'Results could not load':!data?'Loading results':s.working?{prepare:'Preparing',fit:'Training',predict:'Predicting',validate:'Validating'}[s.runningView]:s.prerequisite?'Run '+({prepare:'Prepare',fit:'Train'}[s.prerequisite])+' first':s.done[s.view]?'Complete':'Ready';
+  DmChunkNext.update(qs('[data-sc-next]'),qs('[data-sc-state]'),s,!!data);
   const execution=qs('[data-sc-execution]');execution.setAttribute('aria-valuenow',String(Math.round(s.progress*100)));execution.querySelector('span').style.width=s.progress*100+'%';
   renderCode(s);renderOutput(s);
  }
@@ -960,6 +976,10 @@ globalThis.DmStepExplorer={create({root,saved,onChange}){
  function change(value){syncClock();model.select(value);clearCopy();draw();persist();resume();}
  qa('[data-sc-language]').forEach(b=>b.addEventListener('click',()=>change({language:b.dataset.scLanguage})));
  qa('[data-sc-view]').forEach(b=>b.addEventListener('click',()=>change({view:b.dataset.scView})));
+ qs('[data-sc-next]').addEventListener('click',()=>{
+  syncClock();const next=DmChunkNext.view(model.snapshot(),!!data);
+  if(next){change({view:next});qs('[data-sc-run]').focus({preventScroll:true});}
+ });
  function tick(){
   frame=0;const revision=model.snapshot().revision;syncClock();
   if(el.getClientRects().length&&!document.hidden)draw();
@@ -1128,6 +1148,7 @@ globalThis.DmIrisExplorer={create({root,saved,onChange}){
   syncClock();const s=model.snapshot();qa('[data-ic-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.icLanguage===s.language)));qa('[data-ic-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.icView===s.view)));
   const run=qs('[data-ic-run]');run.disabled=s.working||!!s.prerequisite||!data;run.querySelector('span').textContent=s.done[s.view]?'Run again':'Run';
   qs('[data-ic-state]').textContent=loadFailed?'Results could not load':!data?'Loading results':s.working?{prepare:'Preparing',fit:'Training',predict:'Predicting',validate:'Validating'}[s.runningView]:s.prerequisite?'Run '+({prepare:'Prepare',fit:'Train'}[s.prerequisite])+' first':s.done[s.view]?'Complete':'Ready';
+  DmChunkNext.update(qs('[data-ic-next]'),qs('[data-ic-state]'),s,!!data);
   const execution=qs('[data-ic-execution]');execution.setAttribute('aria-valuenow',String(Math.round(s.progress*100)));execution.querySelector('span').style.width=s.progress*100+'%';
   renderCode(s);renderOutput(s);
  }
@@ -1139,6 +1160,10 @@ globalThis.DmIrisExplorer={create({root,saved,onChange}){
  function change(value){syncClock();model.select(value);clearCopy();draw();persist();resume();}
  qa('[data-ic-language]').forEach(b=>b.addEventListener('click',()=>change({language:b.dataset.icLanguage})));
  qa('[data-ic-view]').forEach(b=>b.addEventListener('click',()=>change({view:b.dataset.icView})));
+ qs('[data-ic-next]').addEventListener('click',()=>{
+  syncClock();const next=DmChunkNext.view(model.snapshot(),!!data);
+  if(next){change({view:next});qs('[data-ic-run]').focus({preventScroll:true});}
+ });
  function tick(){
   frame=0;const revision=model.snapshot().revision;syncClock();
   if(el.getClientRects().length&&!document.hidden)draw();
