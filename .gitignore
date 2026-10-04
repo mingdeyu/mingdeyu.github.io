@@ -1,5 +1,50 @@
+# Local prototypes, audit evidence, model fits and publishing backups.
+/work/
+
+# Previous Quarto builds, execution caches and standalone demo exports.
 /.quarto/
-.Rhistory
-.Rproj.user
-.DS_Store
+/_freeze/
+/_site/
+/tutorial.html
 /*.gif
+
+# Local builds from site-source/build.py; docs/ is the publishing folder.
+/site/
+/website-build/
+
+# R sessions and personal project state.
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Installed dependencies, Python bytecode and development caches.
+node_modules/
+.venv/
+venv/
+dgpsi-env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+*-checkpoints/
+
+# Local environment settings. Keep example configuration publishable.
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Operating-system files, editor state and temporary output.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.log

@@ -1,0 +1,56 @@
+{
+  "index.html": {
+    "page": "about",
+    "title": "Deyu Ming",
+    "description": "Deyu Ming, Associate Professor at UCL School of Management. Research, education and Gaussian process software.",
+    "canonical": "https://mingdeyu.github.io/"
+  },
+  "about.html": {
+    "page": "about",
+    "title": "Deyu Ming",
+    "description": "Deyu Ming, Associate Professor at UCL School of Management. Research, education and Gaussian process software.",
+    "canonical": "https://mingdeyu.github.io/"
+  },
+  "research.html": {
+    "page": "research",
+    "title": "Research \u00b7 Deyu Ming",
+    "description": "Publications and research grants by Deyu Ming in Gaussian processes, uncertainty quantification and computer model emulation.",
+    "canonical": "https://mingdeyu.github.io/research.html"
+  },
+  "education.html": {
+    "page": "teaching",
+    "title": "Education \u00b7 Deyu Ming",
+    "description": "Education, student supervision and equitable assessment at UCL School of Management.",
+    "canonical": "https://mingdeyu.github.io/education.html"
+  },
+  "teaching.html": {
+    "page": "teaching",
+    "title": "Education \u00b7 Deyu Ming",
+    "description": "Education, student supervision and equitable assessment at UCL School of Management.",
+    "canonical": "https://mingdeyu.github.io/education.html"
+  },
+  "talks.html": {
+    "page": "talks",
+    "title": "Talks \u00b7 Deyu Ming",
+    "description": "Invited seminars and conference talks by Deyu Ming.",
+    "canonical": "https://mingdeyu.github.io/talks.html"
+  },
+  "software.html": {
+    "page": "software",
+    "title": "Software \u00b7 Deyu Ming",
+    "description": "Explore dgpsi: deep Gaussian processes, linked emulation and sequential design through interactive demonstrations.",
+    "canonical": "https://mingdeyu.github.io/software.html"
+  },
+  "contact.html": {
+    "page": "contact",
+    "title": "Contact \u00b7 Deyu Ming",
+    "description": "Contact Deyu Ming at UCL School of Management.",
+    "canonical": "https://mingdeyu.github.io/contact.html"
+  },
+  "404.html": {
+    "page": "about",
+    "title": "Deyu Ming",
+    "description": "Deyu Ming, Associate Professor at UCL School of Management. Research, education and Gaussian process software.",
+    "canonical": "https://mingdeyu.github.io/"
+  }
+}
