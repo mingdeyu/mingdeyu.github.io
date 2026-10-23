@@ -7,12 +7,12 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "404.html": {
-      "bytes": 642424,
-      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
+      "bytes": 642672,
+      "sha256": "431c7bade0d4057df8b67e25d00a6244af1d476498c010024ba0e29dafb65504"
     },
     "about.html": {
-      "bytes": 642424,
-      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
+      "bytes": 642672,
+      "sha256": "431c7bade0d4057df8b67e25d00a6244af1d476498c010024ba0e29dafb65504"
     },
     "assets/analytics.js": {
       "bytes": 1439,
@@ -1111,20 +1111,20 @@
       "sha256": "6cfe094d7eadeb190edacc8ed9683d51290111854deec6abc3cd62a5ac7f7b06"
     },
     "contact.html": {
-      "bytes": 642344,
-      "sha256": "f4473a0f8b3b278b15b3b3f31f0d6cdfe19c875eb25b6ffd1bd698db2ebec12b"
+      "bytes": 642592,
+      "sha256": "25d0fa1d2b2b7c47f57eff14a6ce854a5644f0189fb1d7e2150434b5059c07a0"
     },
     "education.html": {
-      "bytes": 642429,
-      "sha256": "39b55c295b42eb5418bda5a484ba0b7273eda4adaf3040651408b9dc4a03e210"
+      "bytes": 642677,
+      "sha256": "edc3f00eeb64a4a31329cfeebc4be230dee33c155f68cf6a4692f759868848c3"
     },
     "favicon.svg": {
       "bytes": 221,
       "sha256": "d368fd30a3d3dd59761719833fdf27000d80d259a767dd9f8710a49575113486"
     },
     "index.html": {
-      "bytes": 642424,
-      "sha256": "af66e4c14abff79666f2887c844219c7bb0b304f677e821ba914a10541bc82a9"
+      "bytes": 642672,
+      "sha256": "431c7bade0d4057df8b67e25d00a6244af1d476498c010024ba0e29dafb65504"
     },
     "r-model-summary/classification-2-matern2.5.html": {
       "bytes": 9337,
@@ -1259,8 +1259,8 @@
       "sha256": "1ac6bfcf8d93c6ab4112880df832974f08b1a65f19499c3ab8fc8e5aa845d1be"
     },
     "research.html": {
-      "bytes": 642507,
-      "sha256": "aa78c301a2174a38880ff3022b055cb1888cc6361ad075a6e9a8b14f979c0994"
+      "bytes": 642755,
+      "sha256": "6182586b4988c7325f574ab4c59179eeeba58e77a624a60b453bb1cf26cb6808"
     },
     "robots.txt": {
       "bytes": 71,
@@ -1275,8 +1275,8 @@
       "sha256": "cd8f982df499e7455791034e35d248449c262aa831cd8bb263d67d5a037ea32c"
     },
     "software.html": {
-      "bytes": 642525,
-      "sha256": "8224c7d613ca3efe16659ee9eb6a66cdd9c1909aa8ae4dfc6ee928ce248863d2"
+      "bytes": 642773,
+      "sha256": "932cd466e2f4eb810d7d91a7ef2a56d498015835c3b2c31c097544968e5e56b8"
     },
     "step-native-output/python-10-2.png": {
       "bytes": 34655,
@@ -1655,12 +1655,12 @@
       "sha256": "ac95124aa50cb3ff7bc623a990f078c0b461eecd0a504c27d2889ecdee852f1e"
     },
     "talks.html": {
-      "bytes": 642344,
-      "sha256": "5f5c5b3205e9ca1563a5ccb0ec466e33fd2a32cf3992aefd9918c5344353fe3a"
+      "bytes": 642592,
+      "sha256": "7e651f68f8d4f1df1ad2c161aca81e4c127c685ee09a1c6eb0c289a1165dfad8"
     },
     "teaching.html": {
-      "bytes": 642429,
-      "sha256": "39b55c295b42eb5418bda5a484ba0b7273eda4adaf3040651408b9dc4a03e210"
+      "bytes": 642677,
+      "sha256": "edc3f00eeb64a4a31329cfeebc4be230dee33c155f68cf6a4692f759868848c3"
     }
   }
 }
